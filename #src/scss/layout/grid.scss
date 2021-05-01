@@ -6,15 +6,15 @@
 // }
 
 .container {
-  max-width: 1155px;
+  max-width: 1180px;
   margin: auto;
   padding: 0 15px;
 }
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -22,7 +22,7 @@
 .row {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 -15px;
+  margin: 0 -20px;
 }
 .m-row {
   display: flex;
@@ -47,7 +47,11 @@
 .w-100 {
   width: 100%;
 }
-
+.hidden-lg {
+  @media (min-width: $breakpoint-lg) {
+    display: none;
+  }
+}
 .align-self-middle {
   align-self: center;
 }
@@ -103,7 +107,7 @@
 @for $i from 1 through 12 {
   .col-xs-#{$i} {
     @include grid-size(8.333333% * $i);
-    padding: 0 15px;
+    padding: 0 20px;
   }
 }
 
@@ -111,7 +115,7 @@
   @for $i from 1 through 12 {
     .col-sm-#{$i} {
       @include grid-size(8.333333% * $i);
-      padding: 0 15px;
+      padding: 0 20px;
     }
   }
 }
@@ -120,7 +124,7 @@
   @for $i from 1 through 12 {
     .col-md-#{$i} {
       @include grid-size(8.333333% * $i);
-      padding: 0 15px;
+      padding: 0 20px;
     }
   }
 }
@@ -129,7 +133,7 @@
   @for $i from 1 through 12 {
     .col-lg-#{$i} {
       @include grid-size(8.333333% * $i);
-      padding: 0 15px;
+      padding: 0 20px;
     }
   }
 }
@@ -138,7 +142,7 @@
   @for $i from 1 through 12 {
     .col-xl-#{$i} {
       @include grid-size(8.333333% * $i);
-      padding: 0 15px;
+      padding: 0 20px;
     }
   }
 }
@@ -149,7 +153,7 @@
   @for $i from 1 through 12 {
     .col-exs-#{$i} {
       @include grid-size(8.333333% * $i);
-      padding: 0 15px;
+      padding: 0 20px;
     }
   }
 }
