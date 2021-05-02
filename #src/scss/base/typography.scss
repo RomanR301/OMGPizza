@@ -52,7 +52,6 @@
   }
   line-height: 1.16;
 }
-
 .heading-3 {
   @include fontSize(18,24);
   line-height: 1.1;
@@ -61,7 +60,6 @@
     font-size: 33px;
   }
 }
-
 .heading-4 {
   @include fontSize(16, 36);
   line-height: 1.33;
@@ -77,10 +75,15 @@
   line-height: 1.33;
 }
 
-.section-heading {
-  font-weight: 900;
+.app__title {
+  font-weight: 700;
   @include fontSize(36, 56);
-  line-height: 1;
+  line-height: 1.2;
+}
+.app__description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(51, 51, 51, 0.501557);
 }
 
 .icon-icon-facebook:before {
@@ -99,6 +102,30 @@
   content: "\e903";
   color: #ec8f79;
 }
-.icon-icon-instagram:before {
-  content: "\e904";
+.icon-icon-chevron:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-icon-arrow:before {
+  content: "\e906";
+  color: #ff9e2a;
+}
+.icon-icon-star:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-icon-telegram:before {
+  content: "\e908";
+  color: #9b9b9b;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-decoration: none;
+  &-instagram {
+    background-image: url('../img/icons/icon-instagram.svg');
+  }
 }

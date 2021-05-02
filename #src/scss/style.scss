@@ -26,10 +26,10 @@
 
 // components
 
-// @import "./components/buttons.scss";
+@import "./components/buttons.scss";
+@import "./components/other.scss";
+@import "./components/forms.scss";
 // @import "./components/entry-content.scss";
-// @import "./components/forms.scss";
-// @import "./components/other.scss";
 // @import "./components/carousel.scss";
 
 // layout 
@@ -38,7 +38,7 @@
 @import "./layout/footer.scss";
 
 // Vendor
-// @import "./vendor/swiper.scss";
+@import "./vendor/swiper.scss";
 
 
 // pages 

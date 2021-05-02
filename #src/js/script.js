@@ -4,6 +4,30 @@ let front = {
   $body: $('body'),
   init: function () {
       this.events();
+      const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        allowTouchMove: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            spaceBetween: 10,
+          },
+          // when window width is >= 992px
+          640: {
+            spaceBetween: 0,
+            slidesPerView: 'auto',
+          }
+        }
+      })
   },
   toggleNav: function () {
     if (!this.hamburger.hasClass('open')) {
@@ -131,12 +155,6 @@ jQuery(function () {
 //   }
 // });
 
-document.body.addEventListener('keyup', function(e) {
-  if (e.which === 9) /* tab */ {
-    document.body.classList.remove('no-focus-outline');
-  }
-});
-
 
 // HIDE MENU ON BODY CLICK
 
@@ -147,3 +165,84 @@ document.body.addEventListener('keyup', function(e) {
 //    }
 //   });
 
+// (function() {
+
+//     'use strict';
+  
+//     // breakpoint where swiper will be destroyed
+//     // and switches to a dual-column layout
+//     const breakpoint = window.matchMedia( '(min-width:31.25em)' );
+  
+//     // keep track of swiper instances to destroy later
+//     let mySwiper;
+  
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+  
+//     const breakpointChecker = function() {
+  
+//       // if larger viewport and multi-row layout needed
+//       if ( breakpoint.matches === true ) {
+  
+//         // clean up old instances and inline styles when available
+//         if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+  
+//         // or/and do nothing
+//         return;
+  
+//         // else if a small viewport and single column layout needed
+//         } else if ( breakpoint.matches === false ) {
+  
+//           // fire small viewport version of swiper
+//           return enableSwiper();
+  
+//         }
+  
+//     };
+    
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+  
+//     const enableSwiper = function() {
+  
+//         const swiper = new Swiper('.swiper-container', {
+//             slidesPerView: 'auto',
+//             spaceBetween: 26,
+//             navigation: {
+//                 nextEl: '.swiper-button-next',
+//                 prevEl: '.swiper-button-prev',
+//             },
+//             pagination: {
+//                 el: '.swiper-pagination',
+//                 type: 'bullets',
+//             },
+//             breakpoints: {
+//               // when window width is >= 320px
+//               320: {
+//                 spaceBetween: 10,
+//               },
+//               // when window width is >= 992px
+//               640: {
+//                 spaceBetween: 26,
+//                 slidesPerView: 'auto',
+//               }
+//             }
+//           })
+  
+//     };
+  
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+//     //////////////////////////////////////////////////////////////////
+  
+//     // keep an eye on viewport size changes
+//     breakpoint.addListener(breakpointChecker);
+  
+//     // kickstart
+//     breakpointChecker();
+  
+  
+  
+//   })(); /* IIFE end */

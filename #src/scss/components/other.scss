@@ -1,3 +1,10 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.socials-list {
+  display: flex;
+  & a {
+    text-decoration: none;
+    margin-right: 14px;
+  }
+}

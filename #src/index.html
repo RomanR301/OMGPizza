@@ -1,10 +1,227 @@
-@@include('_header.html')
-<main>
-  <section class="hero-screen">
-    <div class="container">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores explicabo est obcaecati alias minima incidunt adipisci placeat? Eos, voluptas suscipit.
-    </div>
-  </section>
-</main>
+<!DOCTYPE html>
+<html lang="uk">
 
-@@include('_footer.html')
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>OMG Sushi&Pizza</title>
+</head>
+
+
+<body>
+  <header class="header home-page-header">
+    <div class="header-left">
+      <a href="index.html" class="header-logo">
+        <img src="./img/main-logo.svg" alt="OMG Sushi and Pizza логотип">
+      </a>
+      <div class="categories-menu">
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-pizza.svg" alt="Піца">
+            <span>Піца</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-kimbap.svg" alt="Суші">
+            <span>Суші</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-soup.svg" alt="Супи">
+            <span>Супи</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-drink.svg" alt="Напої">
+            <span>Напої</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-salad.svg" alt="Салати">
+            <span>Салати</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-icecream.svg" alt="Десерти">
+            <span>Десерти</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-tabasko.svg" alt="Соуси">
+            <span>Соуси</span>
+          </p>
+        </a>
+      </div>
+      <a class="login" href="#">
+        <i class="icon-icon-user"></i>
+      </a>
+    </div>
+    <div class="header-top home-page-header">
+      <a href="index.html" class="header-logo hidden-lg">
+        <img src="./img/main-logo.svg" alt="OMG Sushi and Pizza логотип">
+      </a>
+      <div class="header-schedule">
+        Працюємо
+        <p>з <span>10:00</span> до <span>00:00</span></p>
+      </div>
+      <div class="navbar">
+        <ul class="menu">
+          <li class="menu-item"><a class="menu__link" href="#">Меню</a></li>
+          <li class="menu-item"><a class="menu__link" href="#">Акції</a></li>
+          <li class="menu-item"><a class="menu__link" href="#">Новини</a></li>
+          <li class="menu-item"><a class="menu__link" href="#">Про нас</a></li>
+          <li class="menu-item"><a class="menu__link" href="#">Доставка та оплата</a></li>
+          <li class="menu-item"><a class="menu__link" href="#">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="header-phone">
+        <i class="icon-icon-phone circle-icon"></i>
+        <a class="header-phone__link --bold" href="tel:+375293210000">+375 (29) 321 00 00</a>
+        <a class="header-phone__link" href="tel:+375333210000">+375 (33) 321 00 00</a>
+      </div>
+      <div class="header-cart">
+        <i class="icon-icon-cart circle-icon"></i>
+        <span class="cart-counter">1</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-screen">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="hero-screen__content">
+              <h1 class="hero-screen-title" data-title="...dolor sit amet, consectetur adipiscing ">...dolor sit amet, consectetur adipiscing </h1>
+              <a class="btn btn-shadow" href="#">Кнопка</a>
+              <div class="socials-list">
+                <a class="circle-icon" href="#">
+                  <i class="icon-icon-facebook"></i>
+                </a>
+                <a class="circle-icon" href="#">
+                  <i class="icon icon-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 ml-auto">
+            <div class="hero-screen__image">
+              <img src="./img/hero-screen-girl.png" alt="Hero screen image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 mb-50">
+            <div class="btn btn-green m-auto mb-18">категорії</div>
+            <h2 class="app__title text-center">Morbi sed accumsan </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="categories-item">
+                    <div class="categories-icon">
+                      <img src="./img/menu-pizza.svg" alt="Піца">
+                      <span class="categories-counter">42</span>
+                    </div>
+                    <div class="categories-text">
+                      <h4 class="categories-title">Піца</h4>
+                      <span class="categories-price">Від 50 грн</span>
+                    </div>
+                  </a>
+                </div>          
+                <div class="swiper-slide">
+                  <a href="#" class="categories-item">
+                    <div class="categories-icon">
+                      <img src="./img/menu-kimbap.svg" alt="Суші">
+                      <span class="categories-counter">35</span>
+                    </div>
+                    <div class="categories-text">
+                      <h4 class="categories-title">Суші</h4>
+                      <span class="categories-price">Від 50 грн</span>
+                    </div>
+                  </a>
+                </div>          
+                <div class="swiper-slide">
+                  <a href="#" class="categories-item">
+                    <div class="categories-icon">
+                      <img src="./img/menu-drink.svg" alt="Напої">
+                      <span class="categories-counter">42</span>
+                    </div>
+                    <div class="categories-text">
+                      <h4 class="categories-title">Напої</h4>
+                      <span class="categories-price">Від 50 грн</span>
+                    </div>
+                  </a>
+                </div>                  
+                <div class="swiper-slide">
+                  <a href="#" class="categories-item">
+                    <div class="categories-icon">
+                      <img src="./img/menu-salad.svg" alt="Салати">
+                      <span class="categories-counter">42</span>
+                    </div>
+                    <div class="categories-text">
+                      <h4 class="categories-title">Салати</h4>
+                      <span class="categories-price">Від 50 грн</span>
+                    </div>
+                  </a>
+                </div>          
+                <div class="swiper-slide">
+                  <a href="#" class="categories-item">
+                    <div class="categories-icon">
+                      <img src="./img/menu-soup.svg" alt="Супи">
+                      <span class="categories-counter">42</span>
+                    </div>
+                    <div class="categories-text">
+                      <h4 class="categories-title">Супи</h4>
+                      <span class="categories-price">Від 50 грн</span>
+                    </div>
+                  </a>
+                </div>          
+                <div class="swiper-slide">
+                  <a href="#" class="categories-item">
+                    <div class="categories-icon">
+                      <img src="./img/menu-icecream.svg" alt="Десерти">
+                      <span class="categories-counter">42</span>
+                    </div>
+                    <div class="categories-text">
+                      <h4 class="categories-title">Десерти</h4>
+                      <span class="categories-price">Від 50 грн</span>
+                    </div>
+                  </a>
+                </div>          
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-carousel">
+      <div class="container">
+        <div class="btn btn-green mb-18">НОВИНКИ</div>
+        <h2 class="app__title">Morbi sed accumsan </h2>
+        <p class="app__description">Morbi sed accumsan massa, sed aliquet erat. Integer consequat, mauris quis iaculis sodales.</p>
+      </div>
+    </section>
+  </main>
+
+  @@include('_footer.html')
