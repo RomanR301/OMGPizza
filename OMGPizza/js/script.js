@@ -4,13 +4,13 @@ let front = {
   $body: $('body'),
   init: function () {
       this.events();
-      const swiper = new Swiper('.swiper-container', {
+      const swiper = new Swiper('.categories-carousel', {
         slidesPerView: 'auto',
         spaceBetween: 0,
         allowTouchMove: false,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.categories-next',
+            prevEl: '.categories-prev',
         },
         pagination: {
             el: '.swiper-pagination',
@@ -28,6 +28,19 @@ let front = {
           }
         }
       })
+      const productsCarousel = new Swiper(".new-products-carousel", {
+        slidesPerView: 4,
+        spaceBetween: 35,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: '.new-products-carousel-next',
+          prevEl: '.new-products-carousel-prev',
+      },
+
+      });
   },
   toggleNav: function () {
     if (!this.hamburger.hasClass('open')) {
