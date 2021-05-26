@@ -3,9 +3,10 @@
 
 .entry-content {
   & p {
-    font-size: 18px;
-    margin-bottom: 18px;
+    font-size: 16px;
+    margin-bottom: 24px;
     line-height: 1.5;
+    color: #777777;
     @media (min-width: $breakpoint-xxl) {
       font-size: 24px;
       margin-bottom: 24px;

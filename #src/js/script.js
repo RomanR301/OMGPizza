@@ -1,6 +1,6 @@
 let front = {
   hamburger: $('.hamburger'),
-  nav: $('.navbar'),
+  nav: $('.navbar-mobile'),
   $body: $('body'),
   init: function () {
       this.events();
@@ -19,10 +19,14 @@ let front = {
         breakpoints: {
           // when window width is >= 320px
           320: {
+            // slidesPerGroup: 3,
+            slidesPerView: 4,
             spaceBetween: 10,
+            loop: true,
+            loopFillGroupWithBlank: true,
           },
           // when window width is >= 992px
-          640: {
+          1200: {
             spaceBetween: 0,
             slidesPerView: 'auto',
           }
@@ -31,7 +35,21 @@ let front = {
       const productsCarousel = new Swiper(".new-products-carousel", {
         slidesPerView: 4,
         spaceBetween: 35,
+        slidesPerColumn: 1,
         loop: true,
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          767: {
+            slidesPerView: 3,
+            spaceBetween: 35,
+          },
+          992: {
+            slidesPerView: 4,
+          }
+        },
         pagination: {
           el: ".swiper-pagination",
         },
@@ -47,14 +65,14 @@ let front = {
         this.hamburger.addClass('open');
         this.nav.toggleClass('active');
         this.$body.addClass('active')
+        $('.header').addClass('active');
         } else {
             this.hamburger.removeClass('open');
             this.nav.toggleClass('active');
             this.$body.removeClass('active')
+            $('.header').removeClass('active');
         }
     },  
-
-
   openTab: function (element, tabName, parent) {
       let i, tab_content, tab_links;
 
@@ -159,103 +177,3 @@ jQuery(function () {
   modal.init();
     
 });
-
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() > 10) {
-//     $('.scroll-to-top').addClass("scrolled");
-//   } else {
-//   	$('.scroll-to-top').removeClass("scrolled");
-//   }
-// });
-
-
-// HIDE MENU ON BODY CLICK
-
-// $('html').click(function(e) {
-//     var a = e.target;
-//     if ($(a).parents('.menu-item-has-child').length === 0) {
-//       $('.menu-item-has-child').removeClass('show'); //hide menu item
-//    }
-//   });
-
-// (function() {
-
-//     'use strict';
-  
-//     // breakpoint where swiper will be destroyed
-//     // and switches to a dual-column layout
-//     const breakpoint = window.matchMedia( '(min-width:31.25em)' );
-  
-//     // keep track of swiper instances to destroy later
-//     let mySwiper;
-  
-//     //////////////////////////////////////////////////////////////////
-//     //////////////////////////////////////////////////////////////////
-//     //////////////////////////////////////////////////////////////////
-  
-//     const breakpointChecker = function() {
-  
-//       // if larger viewport and multi-row layout needed
-//       if ( breakpoint.matches === true ) {
-  
-//         // clean up old instances and inline styles when available
-//         if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
-  
-//         // or/and do nothing
-//         return;
-  
-//         // else if a small viewport and single column layout needed
-//         } else if ( breakpoint.matches === false ) {
-  
-//           // fire small viewport version of swiper
-//           return enableSwiper();
-  
-//         }
-  
-//     };
-    
-//     //////////////////////////////////////////////////////////////////
-//     //////////////////////////////////////////////////////////////////
-//     //////////////////////////////////////////////////////////////////
-  
-//     const enableSwiper = function() {
-  
-//         const swiper = new Swiper('.swiper-container', {
-//             slidesPerView: 'auto',
-//             spaceBetween: 26,
-//             navigation: {
-//                 nextEl: '.swiper-button-next',
-//                 prevEl: '.swiper-button-prev',
-//             },
-//             pagination: {
-//                 el: '.swiper-pagination',
-//                 type: 'bullets',
-//             },
-//             breakpoints: {
-//               // when window width is >= 320px
-//               320: {
-//                 spaceBetween: 10,
-//               },
-//               // when window width is >= 992px
-//               640: {
-//                 spaceBetween: 26,
-//                 slidesPerView: 'auto',
-//               }
-//             }
-//           })
-  
-//     };
-  
-//     //////////////////////////////////////////////////////////////////
-//     //////////////////////////////////////////////////////////////////
-//     //////////////////////////////////////////////////////////////////
-  
-//     // keep an eye on viewport size changes
-//     breakpoint.addListener(breakpointChecker);
-  
-//     // kickstart
-//     breakpointChecker();
-  
-  
-  
-//   })(); /* IIFE end */

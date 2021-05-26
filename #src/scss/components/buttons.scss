@@ -4,15 +4,13 @@
 .btn {
   font-family: inherit;
   &-primary {
-
   }
   &-secondary {
-    
   }
   &-shadow {
     width: fit-content;
     text-decoration: none;
-    color: #F4B54E;
+    color: #f4b54e;
     background: $whiteColor;
     padding: 15px 30px;
     letter-spacing: 1px;
@@ -22,7 +20,7 @@
     line-height: 18px;
     border-radius: 12px;
     box-shadow: 4px 4px 0px 1px #e93f80;
-    @include transition(.3);
+    @include transition(0.3);
     &:hover {
       background: transparent;
       background: #e93f80;
@@ -39,5 +37,40 @@
     font-size: 14px;
     line-height: 32px;
     padding: 0 26px;
+    @media (max-width: $breakpoint-md) {
+      font-size: 10px;
+      padding: 0 14px;
+      line-height: 26px;
+    }
+  }
+}
+
+.btn-link-default {
+  text-decoration: none;
+  border-bottom: 1px solid #FDAB5C;
+  @include transition(0.3);
+  color: #FDAB5C;
+  letter-spacing: 0.5px;
+  &:hover {
+    border-color: transparent;
+  }
+}
+.btn-link-yellow {
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  color: #FF9E2A;
+  &:after {
+    font-family: 'icomoon';
+    content: "\e906";
+    color: #ff9e2a;
+    font-size: 8px;
+    padding-left: 10px;
+    @include transition(.3);
+  }
+  &:hover {
+    &:after {
+      padding-left: 15px;
+    }
   }
 }

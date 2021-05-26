@@ -2,30 +2,38 @@
 @import "./#src/scss/abstracts/variables.scss";
 
 .seo {
-  margin: 48px 0 64px 0;
+  padding: 48px 0 64px 0;
+  background-image: url('../../../img/seo-background-image.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 77% 10%;
   @media (max-width: $breakpoint-md) {
     margin: 24px 0 32px 0;
   }
   &-component {
     & h1 {
-      @include fontSize(16, 28);
+      @include fontSize(36, 56);
       line-height: 1.375;
       margin-bottom: 4px;
+      font-weight: 700;
+      margin-bottom: 34px;
     }
     & h2 {
-      @include fontSize(16, 28);
+      @include fontSize(36, 56);
       line-height: 1.375;
       margin-bottom: 4px;
+      font-weight: 700;
+      margin-bottom: 34px;
     }
     & .entry-content {
-      height: 260px;
+      height: 300px;
       padding-right: 16px;
       overflow-y: scroll;
       color: $whiteColor;
       & p {
-        color: $blackColor;
+        color: #777777;
         font-size: 16px;
-        line-height: 1.625;
+        line-height: 28px;
       }
       & ul li, & ol li {
         color: $blackColor;

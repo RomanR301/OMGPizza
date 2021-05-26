@@ -77,13 +77,17 @@
 
 .app__title {
   font-weight: 700;
-  @include fontSize(36, 56);
+  @include fontSize(24, 56);
   line-height: 1.2;
 }
 .app__description {
   font-size: 16px;
   line-height: 1.8;
   color: rgba(51, 51, 51, 0.501557);
+  @media (max-width: $breakpoint-md) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .icon-icon-facebook:before {

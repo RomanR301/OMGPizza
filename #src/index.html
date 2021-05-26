@@ -68,7 +68,7 @@
       </a>
     </div>
     <div class="header-top home-page-header">
-      <a href="index.html" class="header-logo hidden-lg">
+      <a href="index.html" class="header-logo">
         <img src="./img/main-logo.svg" alt="OMG Sushi and Pizza логотип">
       </a>
       <div class="header-schedule">
@@ -94,13 +94,78 @@
         <i class="icon-icon-cart circle-icon"></i>
         <span class="cart-counter">1</span>
       </div>
+      <div class="header-login">
+        <a class="login" href="#">
+          <i class="icon-icon-user"></i>
+        </a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-mobile">
+      <div class="categories-menu">
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-pizza.svg" alt="Піца">
+            <span>Піца</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-kimbap.svg" alt="Суші">
+            <span>Суші</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-soup.svg" alt="Супи">
+            <span>Супи</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-drink.svg" alt="Напої">
+            <span>Напої</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-salad.svg" alt="Салати">
+            <span>Салати</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-icecream.svg" alt="Десерти">
+            <span>Десерти</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-tabasko.svg" alt="Соуси">
+            <span>Соуси</span>
+          </p>
+        </a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item"><a class="menu__link" href="#">Меню</a></li>
+        <li class="menu-item"><a class="menu__link" href="#">Акції</a></li>
+        <li class="menu-item"><a class="menu__link" href="#">Новини</a></li>
+        <li class="menu-item"><a class="menu__link" href="#">Про нас</a></li>
+        <li class="menu-item"><a class="menu__link" href="#">Доставка та оплата</a></li>
+        <li class="menu-item"><a class="menu__link" href="#">Контакти</a></li>
+      </ul>
     </div>
   </header>
   <main>
     <section class="hero-screen">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-xs-6">
             <div class="hero-screen__content">
               <h1 class="hero-screen-title" data-title="...dolor sit amet, consectetur adipiscing ">...dolor sit amet,
                 consectetur adipiscing </h1>
@@ -115,7 +180,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-7 ml-auto">
+          <div class="col-xl-7 col-xs-12 ml-auto">
             <div class="hero-screen__image">
               <img src="./img/hero-screen-girl.png" alt="Hero screen image">
             </div>
@@ -126,7 +191,7 @@
     <section class="home-categories">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 mb-50">
+          <div class="col-xs-12">
             <div class="btn btn-green m-auto mb-18">категорії</div>
             <h2 class="app__title text-center">Morbi sed accumsan </h2>
           </div>
@@ -208,10 +273,11 @@
                   </a>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev categories-prev"></div>
-              <div class="swiper-button-next categories-next"></div>
+              <div class="swiper-button-next categories-next">
+                <i class="icon-icon-chevron"></i>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -227,7 +293,7 @@
               sodales.</p>
           </div>
           <div class="product-carousel__buttons">
-            <p>Переглянути все</p>
+            <a class="btn-link-default" href="catalog.html">Переглянути все</a>
             <div class="d-flex">
               <div class="swiper-button new-products-carousel-prev">
                 <i class="icon-icon-chevron"></i>
@@ -274,8 +340,60 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-
     </section>
+        <!--
+    <section class="home-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="home-about__image">
+              <img src="./img/home-about.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="btn btn-green mb-18">НОВИНКИ</div>
+            <h2 class="app__title mb-12">Lorem ipsum dolor sit amet.</h2>
+            <p class="app__description mb-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed
+              accumsan massa, sed aliquet erat.
+              Integer consequat, mauris quis iaculis sodales, nulla urna viverra justo, eget iaculis arcu nisl nec nunc.
+              Vestibulum ante odio, vehicula non mattis sit amet, interdum eu lacus. </p>
+            <a href="#" class="btn-link-yellow">Читати більше</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-sales">
+      <div class="container">
+        <div class="home-sales__header">
+          <div class="phome-sales__text">
+            <div class="btn btn-green mb-18">Акції</div>
+            <h2 class="app__title">Lorem ipsum dolor sit amet</h2>
+            <p class="app__description">Morbi sed accumsan massa, sed aliquet erat. Integer consequat, mauris quis
+              iaculis
+              sodales.</p>
+          </div>
+          <div class="home-sales__button">
+            <a class="btn-link-default" href="catalog.html">Переглянути все</a>
+          </div>
+        </div>
+        <div class="row">
+          @@include('_product-item-sales.html')
+          @@include('_product-item-sales.html')
+          @@include('_product-item-sales.html')
+          @@include('_product-item-sales.html')
+          @@include('_product-item-sales.html')
+          @@include('_product-item-sales.html')
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="instagram-feed">
+      ??????????
+    </section> -->
+    <!-- <section class="delivery">
+      ??????????
+    </section> -->
+
+    <!-- @@include('./scss/ui-kit/seo-component/_seo-component.html') -->
 
   </main>
 
