@@ -159,7 +159,6 @@ let modal = {
         $('.home-page-header').removeClass("scroll");  
       }
     });
-    console.log(heroHeight)
       $(document).on('click', '.modalTrigger', function (e) {
           e.preventDefault();
           let self = $(this),
