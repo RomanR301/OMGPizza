@@ -25,6 +25,9 @@
       background-size: contain;
       background-position: center;
       border-bottom: 2px solid #EEEEEE;
+      @media (max-width: $breakpoint-md) {
+        height: 160px;
+      }
       &:hover {
         & img {
           transform: scale(1.05);
@@ -67,6 +70,17 @@
         font-size: 18px;
         font-weight: 400;
       }
+      @media (max-width: $breakpoint-md) {
+        font-size: 12px;
+        & span {
+          font-size: 10px;
+        }
+      }
+    }
+    & .app__description {
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+      }
     }
     &__price {
       display: flex;
@@ -76,19 +90,32 @@
     &__amount {
       font-size: 12px;
       font-weight: 400;
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+      }
       & span {
         font-size: 17px;
+        @media (max-width: $breakpoint-md) {
+          font-size: 12px;
+        }
       }
     }
     &__weight {
       font-size: 14px;
       color: #959595;
+      white-space: nowrap;
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+      }
     }
     &__order {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 20px 15px 20px;
+      @media (max-width: $breakpoint-sm) {
+        padding: 0 15px 15px 15px;
+      }
       & .button {
         background: linear-gradient(180deg, #F29870 0%, #F8C53E 100%);
         border-radius: 27px;
@@ -103,6 +130,11 @@
         box-shadow: 1px 1px 10px rgba(255,255,255, .9);
         text-decoration: none;
         @include transition(.3);
+        @media (max-width: $breakpoint-sm) {
+          font-size: 8px;
+          padding: 0 8px;
+          line-height: 27px;
+        }
         &:hover {
           box-shadow: 1px 1px 10px #FDAB5C;
         }
@@ -153,6 +185,11 @@
           justify-content: center;
           cursor: pointer;
           @include transition(.3);
+          @media (max-width: $breakpoint-sm) {
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+          }
           &:hover {
             box-shadow: -3px -3px 5px #F8F9FC, 1px 1px 10px #FDAB5C;
           }
@@ -172,6 +209,9 @@
         border: none;
         outline: none;
         pointer-events: none;
+        @media (max-width: $breakpoint-sm) {
+          width: 18px;
+        }
       }
     }
   }
@@ -182,10 +222,25 @@
   margin: 0;
   display: flex;
   align-items: center;
+  margin-bottom: 28px;
   & .product-item__image {
     border: none;
     width: 280px;
     min-width: 280px;
+    @media (max-width: $breakpoint-md) {
+      width: 165px;
+      min-width: 165px;
+    }
+    & img {
+      width: 120px;
+      @media (max-width: $breakpoint-md) {
+        width: 90px;
+      }
+    }
+    @media (max-width: $breakpoint-xl) {
+      width: 230px;
+      min-width: 230px;
+    }
     &:after {
       content: '';
       height: 80%;
@@ -194,6 +249,14 @@
       width: 2px;
       background: #eee;
       position: absolute;
+    }
+  }
+  & .product-item__main {
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+    }
+    @media (max-width: $breakpoint-md) {
+      padding: 15px 15px;
     }
   }
   & .product-item__badge {
@@ -223,9 +286,15 @@
     margin: 5px 0 10px 0;
     & .old-price {
       font-size: 12px;
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+      }
       & span {
         font-size: 14px;
         text-decoration: line-through;
+        @media (max-width: $breakpoint-md) {
+          font-size: 10px;
+        }
       }
     }
     & .new-price {
@@ -234,13 +303,25 @@
         font-size: 20px;
         font-weight: 700;
       }
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+        & span {
+          font-size: 12px;
+        }
+      }
     }
     & .weight {
       color: #959595;
       font-size: 14px;
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+      }
     }
     & .portion {
       font-size: 12px;
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+      }
     }
   }
 }

@@ -8,7 +8,8 @@
   background-size: contain;
   background-position: 77% 10%;
   @media (max-width: $breakpoint-md) {
-    margin: 24px 0 32px 0;
+    margin: 12px 0 0 0;
+    background-position: 77% 100%;
   }
   &-component {
     & h1 {
@@ -33,7 +34,10 @@
       & p {
         color: #777777;
         font-size: 16px;
-        line-height: 28px;
+        @media (max-width: $breakpoint-md) {
+          font-size: 12px;
+        }
+        // line-height: 28px;
       }
       & ul li, & ol li {
         color: $blackColor;

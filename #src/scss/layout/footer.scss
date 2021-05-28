@@ -2,8 +2,19 @@
 @import "../abstracts/variables";
 
 .footer {
-  background: $defaultText; 
+  background: $defaultText;
   padding: 52px 0 35px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 25px 50px 25px 50px;
+  }
+  & .socials-list {
+    @media (max-width: $breakpoint-md) {
+      justify-content: center;
+      & .circle-icon {
+        margin: 0 7px;
+      }
+    }
+  }
   & a {
     color: $whiteColor;
     text-decoration: none;
@@ -12,6 +23,10 @@
     margin-bottom: 25px;
     display: flex;
     width: 78px;
+    @media (max-width: $breakpoint-md) {
+      margin: auto auto 10px auto;
+      width: 45px;
+    }
     & img {
       @include defaultIcon(contain);
     }
@@ -20,6 +35,9 @@
     color: rgba(255, 255, 255, 0.39);
     font-size: 16px;
     margin-bottom: 22px;
+    @media (max-width: $breakpoint-md) {
+      text-align: center;
+    }
   }
   &-menu {
     margin-top: 40px;
@@ -32,17 +50,26 @@
     &__link {
       font-size: 16px;
       border-bottom: 1px solid transparent;
-      @include transition(.3);
+      @include transition(0.3);
+      white-space: nowrap;
       &:hover {
         border-color: $whiteColor;
       }
-    } 
+    }
   }
   &-payment {
     display: flex;
     align-items: center;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
     & img {
       margin-right: 16px;
+      @media (max-width: $breakpoint-md) {
+        margin: 0 8px;
+      }
     }
   }
 }
@@ -50,8 +77,13 @@
   margin-top: 40px;
   &-column {
     margin-left: auto;
-    max-width: 24%;
-    flex: 0 0 24%;
+    max-width: 28%;
+    flex: 0 0 28%;
+    padding: 0 20px;
+    @media (max-width: $breakpoint-md) {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
   }
   &-title {
     & p {
@@ -62,6 +94,9 @@
       letter-spacing: 0.035em;
       margin-bottom: 5px;
       text-transform: uppercase;
+      @media (max-width: $breakpoint-md) {
+        text-align: center;
+      }
     }
     & span {
       color: $whiteColor;
@@ -69,6 +104,9 @@
       letter-spacing: 0.035em;
       display: block;
       margin-bottom: 20px;
+      @media (max-width: $breakpoint-md) {
+        text-align: center;
+      }
     }
   }
   & .form-group {
@@ -90,7 +128,7 @@
     & i {
       font-size: 25px;
       &:before {
-        @include transition(.3);
+        @include transition(0.3);
       }
     }
     &:hover {
@@ -103,16 +141,32 @@
 .copyright-row {
   margin-top: 35px;
   padding-top: 35px;
-  border-top: 1px solid rgba(255,255,255,.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
+  @media (max-width: $breakpoint-md) {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 22px;
+    padding-top: 22px;
+  }
 }
 .privacy {
   margin-left: auto;
   color: $whiteColor;
   border-bottom: 1px solid $whiteColor;
   font-size: 16px;
-  @include transition(.3);
+  @include transition(0.3);
+  @media (max-width: $breakpoint-lg) {
+    font-size: 12px;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: 10px;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-left: 0;
+  }
   &:hover {
     border-color: transparent;
   }
@@ -121,16 +175,35 @@
   color: rgba(255, 255, 255, 0.502972);
   font-size: 16px;
   margin-left: 24px;
+  @media (max-width: $breakpoint-lg) {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: 10px;
+  }
 }
 .mady-by {
   margin-left: 100px;
   font-size: 14px;
+  @media (max-width: $breakpoint-lg) {
+    font-size: 12px;
+  }
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    font-size: 10px;
+  }
   & span {
     color: $whiteColor;
     font-weight: 700;
     font-size: 14px;
     border-bottom: 1px solid transparent;
-    @include transition(.3);
+    @include transition(0.3);
+    @media (max-width: $breakpoint-md) {
+      font-size: 10px;
+    }
   }
   &:hover {
     & span {

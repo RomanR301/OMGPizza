@@ -137,7 +137,29 @@ let modal = {
   },
 
   events: function () {
-
+    heroHeight = $('.hero-screen').height();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100 ) {
+        $('.home-page-header').addClass("hidden");
+      } else {
+        $('.home-page-header').removeClass("hidden");  
+      }
+    });
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 400 ) {
+        $('.home-page-header').addClass("bg-changed");
+      } else {
+        $('.home-page-header').removeClass("bg-changed");  
+      }
+    });
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > heroHeight ) {
+        $('.home-page-header').addClass("scroll");
+      } else {
+        $('.home-page-header').removeClass("scroll");  
+      }
+    });
+    console.log(heroHeight)
       $(document).on('click', '.modalTrigger', function (e) {
           e.preventDefault();
           let self = $(this),

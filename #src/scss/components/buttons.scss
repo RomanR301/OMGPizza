@@ -51,6 +51,9 @@
   @include transition(0.3);
   color: #FDAB5C;
   letter-spacing: 0.5px;
+  @media (max-width: $breakpoint-md) {
+    font-size: 10px;
+  }
   &:hover {
     border-color: transparent;
   }
@@ -60,6 +63,9 @@
   text-decoration: none;
   letter-spacing: 0.5px;
   color: #FF9E2A;
+  @media (max-width: $breakpoint-md) {
+    font-size: 10px;
+  }
   &:after {
     font-family: 'icomoon';
     content: "\e906";
