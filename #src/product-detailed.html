@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>OMG Sushi&Pizza</title>
+</head>
+
+
+<body>
+  @@include('_header.html')
+  <div class="body-paddding"></div>
+  <main class="has-bg-images">
+    @@include('_breadcrumbs.html')
+    <section class="product-detailed">
+      <div class="container">
+        <div class="product-detailed__image">
+          <img src="./img/product-item-image.png" alt="Каліфорнія рол">
+          <div class="product-item__badge">Новинка</div>
+        </div>
+        <div class="product-detailed__content">
+          <div class="product-detailed__type">
+            <div class="type-item type-hot">Гострий</div>
+            <div class="type-item type-warm">Теплий</div>
+          </div>
+          <h1 class="product-detailed__title">
+            Каліфорнія <span>з креветкою</span>
+          </h1>
+          <div class="product-detailed__components">
+            <div class="components__title">
+              Складники:
+            </div>
+            <div class="components-list">
+              <div class="components__item">
+                <img src="./img/component-losos.png" alt="лосось">
+                <span>Лосось</span>
+              </div>
+              <div class="components__item">
+                <img src="./img/component-rise.png" alt="Рис">
+                <span>Рис</span>
+              </div>
+              <div class="components__item">
+                <img src="./img/component-tuna.png" alt="Тунець копчений">
+                <span>Тунець копчений</span>
+              </div>
+              <div class="components__item">
+                <img src="./img/component-nori.png" alt="Норі">
+                <span>Норі</span>
+              </div>
+              <div class="components__item">
+                <img src="./img/component-kryvetky.png" alt="Креветки">
+                <span>Креветки</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="product-detailed__info">
+            <p>
+              <span>135 </span> грн. за 1 порцію (8 шт)
+            </p>
+
+            <span class="weight">490 кКал / 210 г</span>
+          </div>
+          <div class="product-item__order">
+            <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+              data-quantity="1">Замовити</a>
+            <div class="quantity_custom">
+              <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+              <div class="quantity">
+                <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1"
+                  title="К-ть" size="4" placeholder="" inputmode="numeric">
+              </div>
+              <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+            </div>
+          </div>
+          <div class="product-detailed__additional">
+            <div class="additional__item">
+              <img src="./img/icons/icon-samovyviz.png" alt="Самовивіз">
+              Знижки на самовивіз - <span> 30%</span>
+            </div>
+            <div class="additional__item">
+              <img src="./img/icons/icon-dostavka.png" alt="Доставка">
+              Швидка доставка в межах <span> 30 хв</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-detailed__recommendations">
+      <div class="container">
+        <div class="products-carousel__text">
+          <div class="btn btn-green mb-18">НАПОЇ</div>
+          <h2 class="app__title mb-14">Чудово смакує з...</h2>
+          <p class="app__description">Morbi sed accumsan massa, sed aliquet erat. Integer consequat, mauris quis iaculis
+            sodales.</p>
+          <div class="recommendations-list">
+            @@include('_product-item-drinks.html')
+            @@include('_product-item-drinks.html')
+            @@include('_product-item-drinks.html')
+            @@include('_product-item-drinks.html')
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-carousel product-detailed__recommendations">
+      <div class="container">
+        <div class="product-carousel__header">
+          <div class="products-carousel__text">
+            <div class="btn btn-green mb-18">СУШІ</div>
+            <h2 class="app__title">Спробуйте також...</h2>
+            <p class="app__description">Morbi sed accumsan massa, sed aliquet erat. Integer consequat, mauris quis
+              iaculis
+              sodales.</p>
+          </div>
+          <div class="product-carousel__buttons">
+            <a class="btn-link-default" href="catalogue.html">Переглянути все</a>
+            <div class="d-flex">
+              <div class="swiper-button new-products-carousel-prev">
+                <i class="icon-icon-chevron"></i>
+              </div>
+              <div class="swiper-button new-products-carousel-next">
+                <i class="icon-icon-chevron"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container new-products-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('_product-item.html')
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    @@include('./scss/ui-kit/seo-component/_seo-component.html')
+  </main>
+
+  @@include('_footer.html')

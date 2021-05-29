@@ -103,16 +103,6 @@
       z-index: 22;
       box-shadow: -3px 20px 23px rgba(0,0,0,.1);
       @include transition(.3);
-      // // display: none;
-      // position: absolute;
-      // left: 0;
-      // // opacity: 0;
-      // bottom: 0;
-      // box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.1);  
-      // // background: $whiteColor;
-      // background: #f7f7f7;
-      // bottom: -50px;
-      // padding: 0 15px 15px 15px;
     }
     & .app__description {
       @media (max-width: $breakpoint-md) {

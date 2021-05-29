@@ -16,9 +16,8 @@
 <body>
   @@include('_header.html')
   <div class="body-paddding"></div>
-  <main>
+  <main class="has-bg-images">
     @@include('_breadcrumbs.html')
-
     <section class="catalogue">
       <div class="container">
         <ul class="catalogue-menu">
@@ -65,8 +64,6 @@
           <div class="catalogue-sort__by">
             <select name="catalogue-sort-by">
               <option value="za-popularnistu" selected>За популярністю</option>
-              <option value="do-doroguch" selected>Від дешевих до дорогих</option>
-              <option value="do-deshevych" selected>Від дорогих до дешевих</option>
             </select>
           </div>
         </div>
@@ -82,69 +79,15 @@
         </div>
       </div>
     </section>
-
-<!--   
-    <section class="product-carousel">
+    <section class="pagination">
       <div class="container">
-        <div class="product-carousel__header">
-          <div class="products-carousel__text">
-            <div class="btn btn-green mb-18">НОВИНКИ</div>
-            <h2 class="app__title">Сonsectetur adipiscing elit.</h2>
-            <p class="app__description">Morbi sed accumsan massa, sed aliquet erat. Integer consequat, mauris quis
-              iaculis
-              sodales.</p>
-          </div>
-          <div class="product-carousel__buttons">
-            <a class="btn-link-default" href="catalog.html">Переглянути все</a>
-            <div class="d-flex">
-              <div class="swiper-button new-products-carousel-prev">
-                <i class="icon-icon-chevron"></i>
-              </div>
-              <div class="swiper-button new-products-carousel-next">
-                <i class="icon-icon-chevron"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-container new-products-carousel">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-            <div class="swiper-slide">
-              @@include('_product-item.html')
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+        <a href="#" class="page-numbers prev"></a>
+        <a href="#" class="page-numbers">1</a>
+        <a href="#" class="page-numbers current">2</a>
+        <a href="#" class="page-numbers">3</a>
+        <a href="#" class="page-numbers next"></a>
       </div>
-    </section> -->
-
-
+    </section>
     @@include('./scss/ui-kit/seo-component/_seo-component.html')
 
   </main>

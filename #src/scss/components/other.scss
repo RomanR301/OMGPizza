@@ -35,3 +35,99 @@
     }
   }
 }
+
+.pagination {
+  & .container {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width: $breakpoint-md) {
+      justify-content: center;
+    }
+  }
+  & .page-numbers {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $whiteColor;
+    margin: 0 4px;
+    text-decoration: none;
+    @include transition(.3);
+    &:hover, &.current {
+      background-color: #FDAB5C;
+      color: $whiteColor;
+    }
+    &.prev, &.next {
+      width: 60px;
+      height: 40px;
+      background-image: url('../../img/icons/pagination-arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      @media (max-width: $breakpoint-md) {
+        width: 35px;
+      }
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    &.prev {
+      transform: rotate(-180deg);
+      margin-right: 10px;
+      &:hover {
+        transform: rotate(-180deg) translate(4px, 0);
+      }
+    }
+    &.next {
+      margin-left: 10px;
+      &:hover {
+        transform: translate(4px, 0);
+      }
+    }
+  }
+}
+
+.has-bg-images {
+  position: relative;
+  &:before, &:after {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+  } 
+  &:before {
+    background-image: url('../../img/catalogue-decor2.svg');
+    width: 80px;
+    height: 400px;
+    right: 0;
+    top: 30%;
+    @media (max-width: $breakpoint-md) {
+      width: 40px;
+      height: 200px;
+      right: 0;
+      top: 30%;
+    }
+  }
+  &:after {
+    background-image: url('../../img/catalogue-decor3.svg');
+    width: 540px;
+    height: 540px;
+    bottom: 30%;
+    left: 0;
+    @media (max-width: $breakpoint-md) {
+      width: 300px;
+      height: 210px;
+      bottom: 25%;
+    }
+  }
+}
