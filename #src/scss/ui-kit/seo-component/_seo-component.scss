@@ -18,6 +18,9 @@
       margin-bottom: 4px;
       font-weight: 700;
       margin-bottom: 34px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 8px;
+      }
     }
     & h2 {
       @include fontSize(36, 56);
@@ -25,6 +28,9 @@
       margin-bottom: 4px;
       font-weight: 700;
       margin-bottom: 34px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 8px;
+      }
     }
     & .entry-content {
       height: 300px;

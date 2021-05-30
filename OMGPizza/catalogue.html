@@ -8,22 +8,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>OMG Sushi&Pizza</title>
-</head>
-
-
-<body>
-  <!DOCTYPE html>
-<html lang="uk">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>OMG Sushi&Pizza</title>
 </head>
@@ -94,11 +78,11 @@
       <div class="navbar">
         <ul class="menu">
           <li class="menu-item"><a class="menu__link" href="catalogue.html">Меню</a></li>
-          <li class="menu-item"><a class="menu__link" href="#">Акції</a></li>
-          <li class="menu-item"><a class="menu__link" href="#">Новини</a></li>
-          <li class="menu-item"><a class="menu__link" href="#">Про нас</a></li>
-          <li class="menu-item"><a class="menu__link" href="#">Доставка та оплата</a></li>
-          <li class="menu-item"><a class="menu__link" href="#">Контакти</a></li>
+          <li class="menu-item"><a class="menu__link" href="discounts.html">Акції</a></li>
+          <li class="menu-item"><a class="menu__link" href="news.html">Новини</a></li>
+          <li class="menu-item"><a class="menu__link" href="about.html">Про нас</a></li>
+          <li class="menu-item"><a class="menu__link" href="delivery.html">Доставка та оплата</a></li>
+          <li class="menu-item"><a class="menu__link" href="contacts.html">Контакти</a></li>
         </ul>
       </div>
       <div class="header-phone">
@@ -169,657 +153,659 @@
       </div>
       <ul class="menu">
         <li class="menu-item"><a class="menu__link" href="catalogue.html">Меню</a></li>
-        <li class="menu-item"><a class="menu__link" href="#">Акції</a></li>
-        <li class="menu-item"><a class="menu__link" href="#">Новини</a></li>
-        <li class="menu-item"><a class="menu__link" href="#">Про нас</a></li>
-        <li class="menu-item"><a class="menu__link" href="#">Доставка та оплата</a></li>
-        <li class="menu-item"><a class="menu__link" href="#">Контакти</a></li>
+        <li class="menu-item"><a class="menu__link" href="discounts.html">Акції</a></li>
+        <li class="menu-item"><a class="menu__link" href="news.html">Новини</a></li>
+        <li class="menu-item"><a class="menu__link" href="about.html">Про нас</a></li>
+        <li class="menu-item"><a class="menu__link" href="delivery.html">Доставка та оплата</a></li>
+        <li class="menu-item"><a class="menu__link" href="contacts.html">Контакти</a></li>
       </ul>
     </div>
   </header>
 
   <div class="body-padding"></div>
-  <div class="body-paddding"></div>
-  <main class="has-bg-images">
-    <div class="breadcrumbs-container container">
-  <ul class="breadcrumbs">
-    <li>
-      <a href="index.html">Головна</a>
-    </li>
-    <li>Хлібна крихта</li>
-  </ul>
-</div>
-    <section class="catalogue">
-      <div class="container">
-        <ul class="catalogue-menu">
+<main class="has-bg-images">
+  <div class="breadcrumbs-container container">
+    <ul class="breadcrumbs">
+      <li>
+        <a href="index.html">Головна</a>
+      </li>
+      <li>
+        <a href="#">Меню</a>
+      </li>
+      <li>Суші</li>
+    </ul>
+  </div>
+  <section class="catalogue">
+    <div class="container">
+      <ul class="catalogue-menu">
+        <li>
+          <a href="#" class="active">Роли</a>
+        </li>
+        <li>
+          <a href="#">Сети</a>
+        </li>
+        <li>
+          <a href="#">Суші</a>
+        </li>
+        <li>
+          <a href="#">Комбо</a>
+        </li>
+      </ul>
+      <div class="catalogue-sort">
+        <ul class="catalogue-sort__type">
           <li>
-            <a href="#" class="active">Роли</a>
+            <input type="checkbox" name="catalogue-sort-all" id="catalogue-sort-all" checked>
+            <label for="catalogue-sort-all">Всі</label>
           </li>
           <li>
-            <a href="#">Сети</a>
+            <input type="checkbox" name="catalogue-sort-filadelfia" id="catalogue-sort-filadelfia">
+            <label for="catalogue-sort-filadelfia">Філадельфія</label>
           </li>
           <li>
-            <a href="#">Суші</a>
+            <input type="checkbox" name="catalogue-sort-tepli-rolu" id="catalogue-sort-tepli-rolu">
+            <label for="catalogue-sort-tepli-rolu">Теплі Роли</label>
           </li>
           <li>
-            <a href="#">Комбо</a>
+            <input type="checkbox" name="catalogue-sort-vegetarianski" id="catalogue-sort-vegetarianski">
+            <label for="catalogue-sort-vegetarianski">Вегетаріанські</label>
+          </li>
+          <li>
+            <input type="checkbox" name="catalogue-sort-syrni" id="catalogue-sort-syrni">
+            <label for="catalogue-sort-syrni">Сирні</label>
+          </li>
+          <li>
+            <input type="checkbox" name="catalogue-sort-gostri" id="catalogue-sort-gostri">
+            <label for="catalogue-sort-gostri">Гострі</label>
           </li>
         </ul>
-        <div class="catalogue-sort">
-          <ul class="catalogue-sort__type">
-            <li>
-              <input type="checkbox" name="catalogue-sort-all" id="catalogue-sort-all" checked>
-              <label for="catalogue-sort-all">Всі</label>
-            </li>
-            <li>
-              <input type="checkbox" name="catalogue-sort-filadelfia" id="catalogue-sort-filadelfia">
-              <label for="catalogue-sort-filadelfia">Філадельфія</label>
-            </li>
-            <li>
-              <input type="checkbox" name="catalogue-sort-tepli-rolu" id="catalogue-sort-tepli-rolu">
-              <label for="catalogue-sort-tepli-rolu">Теплі Роли</label>
-            </li>
-            <li>
-              <input type="checkbox" name="catalogue-sort-vegetarianski" id="catalogue-sort-vegetarianski">
-              <label for="catalogue-sort-vegetarianski">Вегетаріанські</label>
-            </li>
-            <li>
-              <input type="checkbox" name="catalogue-sort-syrni" id="catalogue-sort-syrni">
-              <label for="catalogue-sort-syrni">Сирні</label>
-            </li>
-            <li>
-              <input type="checkbox" name="catalogue-sort-gostri" id="catalogue-sort-gostri">
-              <label for="catalogue-sort-gostri">Гострі</label>
-            </li>
-          </ul>
-          <div class="catalogue-sort__by">
-            <select name="catalogue-sort-by">
-              <option value="za-popularnistu" selected>За популярністю</option>
-            </select>
-          </div>
-        </div>
-        <div class="catalogue-list">
-          <div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-warm">ТЕПЛИЙ</div>
-        <div class="type-item type-hot">Гострий</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-<div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-vegan">Vegan</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div  class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-          <div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-warm">ТЕПЛИЙ</div>
-        <div class="type-item type-hot">Гострий</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-<div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-vegan">Vegan</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div  class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-          <div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-warm">ТЕПЛИЙ</div>
-        <div class="type-item type-hot">Гострий</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-<div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-vegan">Vegan</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div  class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-          <div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-warm">ТЕПЛИЙ</div>
-        <div class="type-item type-hot">Гострий</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-<div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-vegan">Vegan</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div  class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-          <div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-warm">ТЕПЛИЙ</div>
-        <div class="type-item type-hot">Гострий</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-<div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-vegan">Vegan</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div  class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-          <div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-warm">ТЕПЛИЙ</div>
-        <div class="type-item type-hot">Гострий</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-<div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-vegan">Vegan</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div  class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-          <div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-warm">ТЕПЛИЙ</div>
-        <div class="type-item type-hot">Гострий</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-<div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-vegan">Vegan</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div  class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-          <div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-warm">ТЕПЛИЙ</div>
-        <div class="type-item type-hot">Гострий</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
-<div class="product-item">
-  <a href="product-detailed.html" class="product-item__main">
-    <div class="product-item__image">
-      <img src="./img/product-item-image.png" alt="Каліфорнія">
-      <div class="product-item__type">
-        <div class="type-item type-vegan">Vegan</div>
-      </div>
-    </div>
-    <div class="product-item__badge">Новинка</div>
-    <div  class="product-item__title">
-      Каліфорнія <span>з креветкою</span>
-    </div>
-    <div class="product-item__price">
-      <div class="product-item__amount">
-        <span>135</span> грн. за 1 порцію (8 шт)
-      </div>
-      <div class="product-item__weight">
-        210 г
-      </div>
-    </div>
-  </a>
-  <div class="product-item__order">
-    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
-    <div class="quantity_custom">
-      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
-      <div class="quantity">
-        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
-      </div>
-      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
-    </div>
-  </div>
-  <div class="product-item__description">
-    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
-  </div>
-</div>
+        <div class="catalogue-sort__by">
+          <select name="catalogue-sort-by">
+            <option value="za-popularnistu" selected>За популярністю</option>
+          </select>
         </div>
       </div>
-    </section>
-    <section class="pagination">
-      <div class="container">
-        <a href="#" class="page-numbers prev"></a>
-        <a href="#" class="page-numbers">1</a>
-        <a href="#" class="page-numbers current">2</a>
-        <a href="#" class="page-numbers">3</a>
-        <a href="#" class="page-numbers next"></a>
+      <div class="catalogue-list">
+        <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-warm">ТЕПЛИЙ</div>
+        <div class="type-item type-hot">Гострий</div>
       </div>
-    </section>
-    <section class="seo">
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+<div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-vegan">Vegan</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div  class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+        <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-warm">ТЕПЛИЙ</div>
+        <div class="type-item type-hot">Гострий</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+<div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-vegan">Vegan</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div  class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+        <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-warm">ТЕПЛИЙ</div>
+        <div class="type-item type-hot">Гострий</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+<div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-vegan">Vegan</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div  class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+        <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-warm">ТЕПЛИЙ</div>
+        <div class="type-item type-hot">Гострий</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+<div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-vegan">Vegan</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div  class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+        <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-warm">ТЕПЛИЙ</div>
+        <div class="type-item type-hot">Гострий</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+<div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-vegan">Vegan</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div  class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+        <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-warm">ТЕПЛИЙ</div>
+        <div class="type-item type-hot">Гострий</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+<div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-vegan">Vegan</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div  class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+        <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-warm">ТЕПЛИЙ</div>
+        <div class="type-item type-hot">Гострий</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+<div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-vegan">Vegan</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div  class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+        <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-warm">ТЕПЛИЙ</div>
+        <div class="type-item type-hot">Гострий</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+<div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/product-item-image.png" alt="Каліфорнія">
+      <div class="product-item__type">
+        <div class="type-item type-vegan">Vegan</div>
+      </div>
+    </div>
+    <div class="product-item__badge">Новинка</div>
+    <div  class="product-item__title">
+      Каліфорнія <span>з креветкою</span>
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span> грн. за 1 порцію (8 шт)
+      </div>
+      <div class="product-item__weight">
+        210 г
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+  <section class="pagination">
+    <div class="container">
+      <a href="#" class="page-numbers prev"></a>
+      <a href="#" class="page-numbers">1</a>
+      <a href="#" class="page-numbers current">2</a>
+      <a href="#" class="page-numbers">3</a>
+      <a href="#" class="page-numbers next"></a>
+    </div>
+  </section>
+  <section class="seo">
   <div class="container">
     <div class="row align-center">
       <div class="col-md-10 col-xs-12 seo-component">
@@ -855,9 +841,9 @@
   </div>
 </section>
 
-  </main>
+</main>
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-xs-12">

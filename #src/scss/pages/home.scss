@@ -322,34 +322,6 @@
         margin-left: 14px;
       }
     }
-    & .swiper-button {
-      width: 48px;
-      height: 48px;
-      border-radius: 100%;
-      background: #FDAB5C;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      @include transition(.3);
-      & i:before {
-        font-size: 24px;
-      }
-    }
-    & .new-products-carousel-prev {
-      margin-right: 8px;
-      &:hover {
-        transform: translate(-5px, 0);
-      }
-      & i {
-        transform: rotate(180deg);
-      }
-    }
-    & .new-products-carousel-next {
-      &:hover {
-        transform: translate(5px, 0);
-      }
-    }
   }
   & .swiper-slide {
     & .product-item {
@@ -360,6 +332,34 @@
   }
   & .swiper-pagination {
     display: none;
+  }
+}
+.swiper-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background: #FDAB5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include transition(.3);
+  & i:before {
+    font-size: 24px;
+  }
+}
+.prev-btn {
+  margin-right: 8px;
+  &:hover {
+    transform: translate(-5px, 0);
+  }
+  & i {
+    transform: rotate(180deg);
+  }
+}
+.next-btn {
+  &:hover {
+    transform: translate(5px, 0);
   }
 }
 
@@ -381,7 +381,7 @@
     z-index: -1;
   }
   &:before {
-    background-image: url('../../img/home-about-decor1.svg');
+    background-image: url('../img/home-about-decor1.svg');
     right: -95px;
     top: 0;
     width: 240px;
@@ -394,7 +394,7 @@
     }
   }
   &:after {
-    background-image: url('../../img/home-about-decor2.svg');
+    background-image: url('../img/home-about-decor2.svg');
     left: 0;
     bottom: 15%;
     width: 220px;

@@ -59,6 +59,32 @@ let front = {
       },
 
       });
+      const productsRecommendationsCarousel = new Swiper(".product-detailed__recommendations_carousel", {
+        slidesPerView: 4,
+        spaceBetween: 35,
+        slidesPerColumn: 1,
+        loop: true,
+        allowTouchMove: false,
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            allowTouchMove: true,
+          },
+          767: {
+            slidesPerView: 3,
+            spaceBetween: 35,
+            allowTouchMove: true,
+          },
+          992: {
+            slidesPerView: 4,
+            allowTouchMove: false,
+          }
+        },
+        pagination: {
+          el: ".product-detailed__recommendations_carousel_pagination",
+        },
+      });
   },
   toggleNav: function () {
     if (!this.hamburger.hasClass('open')) {
