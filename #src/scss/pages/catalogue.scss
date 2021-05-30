@@ -125,7 +125,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   margin: 0 -18px;
-  background: url('../../img/catalogue-decor1.svg');
+  background: url('../img/catalogue-decor1.svg');
   background-repeat: no-repeat;
   background-size: 240px;
   background-position: 0% 30%;
@@ -189,7 +189,7 @@
   color: $whiteColor;
   &:after {
     content: '';
-    background-image: url('../../img/icons/vegan.svg');
+    background-image: url('../img/icons/vegan.svg');
     background-repeat: no-repeat;
     background-size: 10px;
     margin-left: 5px;
@@ -202,7 +202,7 @@
   color: $whiteColor;
   &:after {
     content: '';
-    background-image: url('../../img/icons/hot.svg');
+    background-image: url('../img/icons/hot.svg');
     background-repeat: no-repeat;
     background-size: 10px;
     margin-left: 5px;
