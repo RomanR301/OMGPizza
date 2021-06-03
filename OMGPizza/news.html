@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>OMG Sushi&Pizza</title>
+</head>
+
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="header-logo">
+        <img src="./img/main-logo.svg" alt="OMG Sushi and Pizza логотип">
+      </a>
+      <div class="categories-menu">
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-pizza.svg" alt="Піца">
+            <span>Піца</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-kimbap.svg" alt="Суші">
+            <span>Суші</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-soup.svg" alt="Супи">
+            <span>Супи</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-drink.svg" alt="Напої">
+            <span>Напої</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-salad.svg" alt="Салати">
+            <span>Салати</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-icecream.svg" alt="Десерти">
+            <span>Десерти</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-tabasko.svg" alt="Соуси">
+            <span>Соуси</span>
+          </p>
+        </a>
+      </div>
+      <a class="login" href="#">
+        <i class="icon-icon-user"></i>
+      </a>
+    </div>
+    <div class="header-top home-page-header">
+      <a href="index.html" class="header-logo">
+        <img src="./img/main-logo.svg" alt="OMG Sushi and Pizza логотип">
+      </a>
+      <div class="header-schedule">
+        Працюємо
+        <p>з <span>10:00</span> до <span>00:00</span></p>
+      </div>
+      <div class="navbar">
+        <ul class="menu">
+          <li class="menu-item"><a class="menu__link" href="catalogue.html">Меню</a></li>
+          <li class="menu-item"><a class="menu__link" href="discounts.html">Акції</a></li>
+          <li class="menu-item"><a class="menu__link" href="news.html">Новини</a></li>
+          <li class="menu-item"><a class="menu__link" href="about.html">Про нас</a></li>
+          <li class="menu-item"><a class="menu__link" href="delivery.html">Доставка та оплата</a></li>
+          <li class="menu-item"><a class="menu__link" href="contacts.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="header-phone">
+        <i class="icon-icon-phone circle-icon"></i>
+        <a class="header-phone__link --bold" href="tel:+375293210000">+375 (29) 321 00 00</a>
+        <a class="header-phone__link" href="tel:+375333210000">+375 (33) 321 00 00</a>
+      </div>
+      <div class="header-cart">
+        <i class="icon-icon-cart circle-icon"></i>
+        <span class="cart-counter">1</span>
+      </div>
+      <div class="header-login">
+        <a class="login" href="#">
+          <i class="icon-icon-user"></i>
+        </a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-mobile">
+      <div class="categories-menu">
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-pizza.svg" alt="Піца">
+            <span>Піца</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-kimbap.svg" alt="Суші">
+            <span>Суші</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-soup.svg" alt="Супи">
+            <span>Супи</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-drink.svg" alt="Напої">
+            <span>Напої</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-salad.svg" alt="Салати">
+            <span>Салати</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-icecream.svg" alt="Десерти">
+            <span>Десерти</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-tabasko.svg" alt="Соуси">
+            <span>Соуси</span>
+          </p>
+        </a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item"><a class="menu__link" href="catalogue.html">Меню</a></li>
+        <li class="menu-item"><a class="menu__link" href="discounts.html">Акції</a></li>
+        <li class="menu-item"><a class="menu__link" href="news.html">Новини</a></li>
+        <li class="menu-item"><a class="menu__link" href="about.html">Про нас</a></li>
+        <li class="menu-item"><a class="menu__link" href="delivery.html">Доставка та оплата</a></li>
+        <li class="menu-item"><a class="menu__link" href="contacts.html">Контакти</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="body-padding"></div>
+<main class="news-page has-bg-images">
+  <div class="breadcrumbs-container container">
+    <ul class="breadcrumbs">
+      <li>
+        <a href="index.html">Головна</a>
+      </li>
+      <li>Новини</li>
+    </ul>
+  </div>
+  <section class="news">
+    <div class="container">
+      <div class="page-title-container">
+        <h1 class="page-title">Новини</h1>
+      </div>
+      <div class="row news-list">
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+        <div class="col-lg-4 col-xs-6">
+  <a href="news-detailed.html" class="news-item">
+    <div class="news-item__image">
+      <img src="./img/news-image.jpg" alt="Description of blog post">
+    </div>
+    <div class="news-item__main">
+      <div class="news-item__date">
+        June 01/ 2019
+      </div>
+      <div class="news-item__title">
+        Dolorem eum fugiat
+        quo voluptas
+      </div>
+      <div class="news-item__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+        molestiae.</div>
+    </div>
+  </a>
+</div>
+      </div>
+    </div>
+  </section>
+  <section class="pagination">
+    <div class="container">
+      <a href="#" class="page-numbers prev"></a>
+      <a href="#" class="page-numbers">1</a>
+      <a href="#" class="page-numbers current">2</a>
+      <a href="#" class="page-numbers">3</a>
+      <a href="#" class="page-numbers next"></a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <a class="footer-logo" href="#">
+          <img src="./img/main-logo-white.svg" alt="OMG Sushi and Pizza логотип">
+        </a>
+        <p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed accumsan massa, sed aliquet erat.</p>
+        <div class="socials-list">
+          <a class="circle-icon" href="#">
+            <i class="icon-icon-facebook"></i>
+          </a>
+          <a class="circle-icon" href="#">
+            <i class="icon icon-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <ul class="footer-menu">
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Меню</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Про нас</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Акції</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Доставка та оплата</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Новини</a>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter-column">
+        <div class="newsletter">
+          <div class="newsletter-title">
+            <p>Підпишіться на розсилку</p>
+            <span>ТА ОТРИМУЙТЕ НОВИНИ ПРО ЗНИЖКИ ТА AКЦІЇ!</span>
+            <form action="">
+              <div class="form-group">
+                <input type="email" class="form-control" name="newsletter" required placeholder="Ваша ел.скринька">
+                <button type="submit">
+                  <i class="icon-icon-telegram"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-row">
+      <div class="footer-payment">
+        <img src="./img/visa.svg" alt="Visa логотип">
+        <img src="./img/mastercard.svg" alt="MasterCard логотип">
+        <img src="./img/apple-pay.svg" alt="ApplePay логотип">
+      </div>
+      <a href="#" class="privacy">Договір публічної оферти</a>
+      <p class="copyright-text">© 2021 OMG. Pizza&Sushi</p>
+      <a class="mady-by" href="#">Дизайн та розробка — <span>WebTune</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/libs.min.js"></script>
+<script src="js/script.min.js"></script>
+
+</body>
+
+</html>

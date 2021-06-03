@@ -2,77 +2,96 @@
 @import "../abstracts/variables";
 
 .entry-content {
+  h1, h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin: 10px 0 26px 0;
+    @media (max-width: $breakpoint-md) {
+      font-size: 24px;
+      margin: 6px 0 14px 0;
+    }
+  }
+  & h3 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 8px 0 20px 0;
+    @media (max-width: $breakpoint-md) {
+      font-size: 20px;
+      margin: 6px 0 16px 0;
+    }
+  }
+  & h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 4px 0 16px 0;
+    @media (max-width: $breakpoint-md) {
+      font-size: 16px;
+      margin: 4px 0 16px 0;
+    }
+  }
+  & h5 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    @media (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+  }
   & p {
     font-size: 16px;
-    margin-bottom: 24px;
-    line-height: 1.5;
-    color: #777777;
-    @media (min-width: $breakpoint-xxl) {
-      font-size: 24px;
-      margin-bottom: 24px;
+    line-height: 1.8;
+    color: rgba(51, 51, 51, 0.5);
+    margin-bottom: 32px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 1.3;
     }
   }
   & a {
-    // color: $redColor;
-    line-height: 1.3;
-    // border-bottom: 1px solid $redColor;
+    color: #F59828;
   }
-  & h1 {
-    @include fontSize(24, 36);
-    line-height: 1.33;
-  }
-  & h2 {
-    @include fontSize(24, 36);
-    line-height: 1.16;
-    margin: 24px 0;
-  }
-  & h3 {
-    @include fontSize(20, 30);
-    line-height: 1.16;
-    margin: 20px 0;
-  }
-  & h4 {
-    @include fontSize(16, 24);
-    line-height: 1.16;
-    margin-bottom: 8px;
-  }
-  & h5 {
-    @include fontSize(14, 20);
-    line-height: 1.16;
-    margin-bottom: 8px;
-  }
-  & h1, h2, h3, h4, h5 {
-    font-weight: 600;
-  }
-
   & img {
-    display: block;
-    width: 100%;
-    max-height: 550px;
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: 24px;
-  }
-  & ul, ol {
-    margin-bottom: 24px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 24px;
+    }
   }
   & ul {
-    & li {
+    padding-left: 30px;
+    @media (max-width: $breakpoint-md) {
       padding-left: 20px;
-      position: relative;
+    }
+    & li {
       font-size: 18px;
-      @media (min-width: $breakpoint-xxl) {
-        font-size: 24px;
+      line-height: 1.8;
+      padding-left: 45px;
+      position: relative;
+      margin-bottom: 30px;
+      color: #F59828;
+      @media (max-width: $breakpoint-md) {
+        line-height: 1.3;
+        font-size: 12px;
+        margin-bottom: 26px;
+        padding-left: 35px;
       }
       &:before {
         content: '';
+        width: 15px;
+        height: 15px;
+        background: #F59828;
         position: absolute;
-        left: 4px;
-        top: 10px;
-        width: 5px;
-        height: 5px;
-        // background: $redColor;
+        left: 0;
+        top: 8px;
         border-radius: 100%;
+        @media (max-width: $breakpoint-md) {
+          top: 5px;
+          width: 10px;
+          height: 10px;
+        }
       }
     }
   }
@@ -80,43 +99,26 @@
     & li {
       counter-increment: li;
       font-size: 18px;
-      @media (min-width: $breakpoint-xxl) {
-        font-size: 24px;
+      line-height: 1.8;
+      padding-left: 30px;
+      position: relative;
+      margin-bottom: 30px;
+      color: #F59828;
+      @media (max-width: $breakpoint-md) {
+        line-height: 1.3;
+        font-size: 12px;
+        margin-bottom: 26px;
+        padding-left: 15px;
       }
       &:before {
+        color: #F59828;
         content: counter(li) ".";
         font-weight: 700;
         padding: 0 4px;
+        font-size: 18px;  
         display: inline-block;
-        min-width: 24px;
-        // color: $redColor;
+        min-width: 45px;
       }
     }
   }
-  & blockquote {
-    position: relative;
-    @include fontSize(18, 24);
-    line-height: 1.4;
-    position: relative;
-    padding: 30px 0 30px 20px;
-    // border-left: 8px solid $redColor;
-    margin: 0 0 24px 4px;
-    @media (max-width: $breakpoint-md) {
-      padding: 20px 0 20px 15px;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      left: -12px;
-      top: calc(50% - 26px);
-      width: 19px;
-      height: 52px;
-      z-index: 1;
-      background-image: url(../../img/icons/blockquote-bg.svg);
-      background-repeat: no-repeat;
-      // background-color: $bodyBackground;
-      background-position: center;
-    }
-  }
 }
-
