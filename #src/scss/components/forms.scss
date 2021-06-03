@@ -1,7 +1,6 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-
 .form-group {
   margin-bottom: 15px;
   & label {
@@ -9,6 +8,10 @@
     font-size: 14px;
     font-weight: 600;
     display: block;
+    @media (max-width: $breakpoint-md) {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
   }
 }
 .form-control {
@@ -25,6 +28,9 @@
   color: $defaultText;
   border: 1px solid #EDEDED;
   @include transition(.3);
+  @media (max-width: $breakpoint-md) {
+    height: 40px;  
+  } 
   &:focus {
     box-shadow: 0 0 5px rgba(255,255,255,.8);
   }

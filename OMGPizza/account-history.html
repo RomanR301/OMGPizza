@@ -168,73 +168,223 @@
     <div class="container">
       <ul class="account-menu">
         <li>
-          <a href="account-profile.html" class="active">Профіль</a>
+          <a href="account-profile.html">Профіль</a>
         </li>
         <li>
-          <a href="account-history.html">Історія замовлень</a>
+          <a href="account-history.html" class="active">Історія замовлень</a>
         </li>
         <li>
           <a href="account-delivery.html">Адреси доставки</a>
         </li>
       </ul>
-      <div class="row">
-        <div class="col-lg-7 col-xs-12">
-          <div class="section__title">
-            <span>1</span>ОСОБИСТІ ДАНІ
+      <div class="account-history__heading">ваші Замовлення</div>
+      <div class="accordion-row">
+        <div class="accordion-container">
+          <div class="accordion__year">Липень 2021</div>
+          <div class="accordion__item">
+  <a class="accordion__button" href="#">
+    <div class="accordion__title"><span>Каліфорнія</span> з креветкою</div>
+    <div class="accordion__amount">2 шт.</div>
+    <div class="accordion__price">270 грн</div>
+    <i class="icon-icon-chevron"></i>
+  </a>
+  <div class="accordion__content">
+    <div class="accordion__content_inner">
+      <div class="accordion__image">
+        <img src="./img/product-item-image.png" alt="">
+      </div>
+      <div class="accordion__text">
+        <div class="accordion__text_title">
+          <div class="accordion__date">4 липня 2021</div>
+          <div class="accordion__order">
+            <span>Каліфорнія з креветкою x2</span>
+            <span>135 грн</span>
           </div>
-          <form action="">
-            <div class="row personal-data">
-              <div class="col-md-6 col-xs-12 form-group">
-                <label for="personal-data-name">Ваше ім’я</label>
-                <input type="text" class="form-control"  name="personal-data-name" id="personal-data-name" placeholder="Володимир">
-              </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label for="personal-data-last-name">Ваше прізвище</label>
-                <input type="text" class="form-control" name="personal-data-last-name" id="personal-data-last-name"
-                  placeholder="Ваше прізвище">
-              </div>
-              <div class="col-xs-12 form-group">
-                <label for="personal-data-name">Номер телефону</label>
-                <input type="text" class="form-control" name="personal-data-name" id="personal-data-name" placeholder="+380 11 11 11 111">
-              </div>
-              <div class="col-xs-12 form-group form-datepicker">
-                <label for="personal-data-date">Дата народження</label>
-                <input type="text" class="form-control" id="datepicker" name="personal-data-date" id="personal-data-date" placeholder="01 Червень 1990.">
-              </div>
-              <div class="col-xs-12 form-group">
-                <label for="personal-data-email">E-mail</label>
-                <input type="email" class="form-control" name="personal-data-email" id="personal-data-email"
-                  placeholder="volodymyr@gmail.com ">
-              </div>
-              <div class="col-xs-12 form-submit">
-                <button class="btn-gradient" type="submit">Зберегти зміни</button>
-              </div>
-            </div>
-          </form>
         </div>
-        <div class="col-lg-5 col-xs-12">
-          <div class="section__title">
-            <span>2</span>Зміна паролю
+        <div class="accordion__total">
+          <div class="accordion__total_title">
+            <span>Загалом</span>
+            <span>270 грн</span>
           </div>
-          <form action="">
-            <div class="row reset-password">
-              <div class="col-xs-12 form-group">
-                <label for="reset-password-current">Ваш поточний паролю</label>
-                <input type="password" class="form-control" name="reset-password-current" id="reset-password-current" required >
-              </div>
-              <div class="col-xs-12 form-group">
-                <label for="reset-password-new">Новий пароль</label>
-                <input type="password" class="form-control" name="reset-password-new" id="reset-password-new" required >
-              </div>
-              <div class="col-xs-12 form-group">
-                <label for="reset-password-new-2">Повторіть новий пароль</label>
-                <input type="password" class="form-control" name="reset-password-new-2" id="reset-password-new-2" required >
-              </div>
-              <div class="col-xs-12 form-submit">
-                <button class="btn-gradient" type="submit">Зберегти зміни</button>
-              </div>
-            </div>
-          </form>
+        </div>
+        <div class="accordion__payment">
+          Оплата за допомогою сервісу LiqPay
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+          <div class="accordion__item">
+  <a class="accordion__button" href="#">
+    <div class="accordion__title"><span>Каліфорнія</span> з креветкою</div>
+    <div class="accordion__amount">2 шт.</div>
+    <div class="accordion__price">270 грн</div>
+    <i class="icon-icon-chevron"></i>
+  </a>
+  <div class="accordion__content">
+    <div class="accordion__content_inner">
+      <div class="accordion__image">
+        <img src="./img/product-item-image.png" alt="">
+      </div>
+      <div class="accordion__text">
+        <div class="accordion__text_title">
+          <div class="accordion__date">4 липня 2021</div>
+          <div class="accordion__order">
+            <span>Каліфорнія з креветкою x2</span>
+            <span>135 грн</span>
+          </div>
+        </div>
+        <div class="accordion__total">
+          <div class="accordion__total_title">
+            <span>Загалом</span>
+            <span>270 грн</span>
+          </div>
+        </div>
+        <div class="accordion__payment">
+          Оплата за допомогою сервісу LiqPay
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+          <div class="accordion__item">
+  <a class="accordion__button" href="#">
+    <div class="accordion__title"><span>Каліфорнія</span> з креветкою</div>
+    <div class="accordion__amount">2 шт.</div>
+    <div class="accordion__price">270 грн</div>
+    <i class="icon-icon-chevron"></i>
+  </a>
+  <div class="accordion__content">
+    <div class="accordion__content_inner">
+      <div class="accordion__image">
+        <img src="./img/product-item-image.png" alt="">
+      </div>
+      <div class="accordion__text">
+        <div class="accordion__text_title">
+          <div class="accordion__date">4 липня 2021</div>
+          <div class="accordion__order">
+            <span>Каліфорнія з креветкою x2</span>
+            <span>135 грн</span>
+          </div>
+        </div>
+        <div class="accordion__total">
+          <div class="accordion__total_title">
+            <span>Загалом</span>
+            <span>270 грн</span>
+          </div>
+        </div>
+        <div class="accordion__payment">
+          Оплата за допомогою сервісу LiqPay
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="accordion-container">
+          <div class="accordion__year">Червень 2021</div>
+          <div class="accordion__item">
+  <a class="accordion__button" href="#">
+    <div class="accordion__title"><span>Каліфорнія</span> з креветкою</div>
+    <div class="accordion__amount">2 шт.</div>
+    <div class="accordion__price">270 грн</div>
+    <i class="icon-icon-chevron"></i>
+  </a>
+  <div class="accordion__content">
+    <div class="accordion__content_inner">
+      <div class="accordion__image">
+        <img src="./img/product-item-image.png" alt="">
+      </div>
+      <div class="accordion__text">
+        <div class="accordion__text_title">
+          <div class="accordion__date">4 липня 2021</div>
+          <div class="accordion__order">
+            <span>Каліфорнія з креветкою x2</span>
+            <span>135 грн</span>
+          </div>
+        </div>
+        <div class="accordion__total">
+          <div class="accordion__total_title">
+            <span>Загалом</span>
+            <span>270 грн</span>
+          </div>
+        </div>
+        <div class="accordion__payment">
+          Оплата за допомогою сервісу LiqPay
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+          <div class="accordion__item">
+  <a class="accordion__button" href="#">
+    <div class="accordion__title"><span>Каліфорнія</span> з креветкою</div>
+    <div class="accordion__amount">2 шт.</div>
+    <div class="accordion__price">270 грн</div>
+    <i class="icon-icon-chevron"></i>
+  </a>
+  <div class="accordion__content">
+    <div class="accordion__content_inner">
+      <div class="accordion__image">
+        <img src="./img/product-item-image.png" alt="">
+      </div>
+      <div class="accordion__text">
+        <div class="accordion__text_title">
+          <div class="accordion__date">4 липня 2021</div>
+          <div class="accordion__order">
+            <span>Каліфорнія з креветкою x2</span>
+            <span>135 грн</span>
+          </div>
+        </div>
+        <div class="accordion__total">
+          <div class="accordion__total_title">
+            <span>Загалом</span>
+            <span>270 грн</span>
+          </div>
+        </div>
+        <div class="accordion__payment">
+          Оплата за допомогою сервісу LiqPay
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="accordion-container">
+          <div class="accordion__year">Травень 2020</div>
+          <div class="accordion__item">
+  <a class="accordion__button" href="#">
+    <div class="accordion__title"><span>Каліфорнія</span> з креветкою</div>
+    <div class="accordion__amount">2 шт.</div>
+    <div class="accordion__price">270 грн</div>
+    <i class="icon-icon-chevron"></i>
+  </a>
+  <div class="accordion__content">
+    <div class="accordion__content_inner">
+      <div class="accordion__image">
+        <img src="./img/product-item-image.png" alt="">
+      </div>
+      <div class="accordion__text">
+        <div class="accordion__text_title">
+          <div class="accordion__date">4 липня 2021</div>
+          <div class="accordion__order">
+            <span>Каліфорнія з креветкою x2</span>
+            <span>135 грн</span>
+          </div>
+        </div>
+        <div class="accordion__total">
+          <div class="accordion__total_title">
+            <span>Загалом</span>
+            <span>270 грн</span>
+          </div>
+        </div>
+        <div class="accordion__payment">
+          Оплата за допомогою сервісу LiqPay
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </div>

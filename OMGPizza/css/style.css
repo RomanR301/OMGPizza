@@ -582,6 +582,177 @@ input[type=number] {
   margin: 0;
 }
 
+.accordion__title {
+  font-size: 16px;
+  font-weight: 400;
+  width: 46%;
+}
+
+.accordion__title span {
+  font-weight: 700;
+}
+
+.accordion__amount {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  width: 36%;
+  font-weight: 700;
+}
+
+.accordion__price {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+}
+
+.accordion-container {
+  padding: 30px 70px;
+  margin-bottom: 30px;
+  background: #F7F7F7;
+  border-radius: 27px;
+}
+
+.accordion__year {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.accordion__image {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  margin-right: 24px;
+  display: flex;
+  background-image: url("../img/product-item-background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.accordion__image img {
+  width: 39px;
+  height: 39px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.accordion__text {
+  width: 100%;
+}
+
+.accordion__text_title {
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.accordion__text_total_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__date {
+  font-size: 12px;
+  line-height: 16px;
+  color: #7C7C7C;
+  margin-bottom: 7px;
+}
+
+.accordion__order {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.accordion__order span {
+  font-weight: 600;
+}
+
+.accordion__order span:last-child {
+  font-size: 16px;
+}
+
+.accordion__total_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__total_title span {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.accordion__order {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__payment {
+  font-size: 12px;
+  color: #7C7C7C;
+}
+
+.accordion__item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion__item.active i {
+  transform: rotate(-90deg);
+}
+
+.accordion__content {
+  display: none;
+  padding: 0 150px 30px 40px;
+  background: #ffffff;
+}
+
+.accordion__content p {
+  margin: 0;
+  color: #333333;
+}
+
+.accordion__content_inner {
+  display: flex;
+}
+
+.accordion__button {
+  padding: 17px 30px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.accordion__button i {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 700;
+  transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.accordion__button i:before {
+  color: #333333;
+}
+
 .btn {
   font-family: inherit;
 }
@@ -670,7 +841,7 @@ input[type=number] {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 10px 28px;
+  padding: 12px 28px;
   display: block;
   box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
   text-decoration: none;
@@ -5443,7 +5614,7 @@ a.ui-button:active,
 }
 
 .account {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .account-menu {
@@ -5459,7 +5630,6 @@ a.ui-button:active,
 
 .account-menu li a {
   display: block;
-  font-weight: 600;
   padding: 28px 30px;
   text-decoration: none;
   position: relative;
@@ -5502,12 +5672,46 @@ a.ui-button:active,
 .reset-password {
   background: #F7F7F7;
   border-radius: 27px;
-  padding: 24px 66px;
+  padding: 24px 70px;
   margin: 0;
+}
+
+.personal-data .col-xs-12,
+.reset-password .col-xs-12 {
+  padding: 0;
+}
+
+.personal-data .col-md-6:nth-child(1),
+.reset-password .col-md-6:nth-child(1) {
+  padding-right: 20px;
+}
+
+.personal-data .col-md-6:nth-child(2),
+.reset-password .col-md-6:nth-child(2) {
+  padding-left: 20px;
+}
+
+.account-profile {
+  margin-bottom: 90px;
 }
 
 .form-submit {
   margin-top: 20px;
+}
+
+.form-datepicker input {
+  background-image: url("../img/icons/icon-calendar.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 95%;
+}
+
+.account-history__heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 576px) {
@@ -6417,6 +6621,19 @@ a.ui-button:active,
   .contacts-box__item {
     margin-bottom: 25px;
   }
+
+  .account {
+    min-height: unset;
+  }
+
+  .personal-data,
+  .reset-password {
+    margin-bottom: 35px;
+  }
+
+  .account-profile {
+    margin: 20px 0 0 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -6442,6 +6659,10 @@ a.ui-button:active,
     padding-bottom: 15px;
   }
 
+  .section__title {
+    margin-bottom: 27px;
+  }
+
   .seo {
     margin: 12px 0 0 0;
     background-position: 77% 100%;
@@ -6457,6 +6678,70 @@ a.ui-button:active,
 
   .seo-component .entry-content p {
     font-size: 12px;
+  }
+
+  .accordion__title {
+    font-size: 12px;
+    width: 60%;
+    padding-right: 10px;
+  }
+
+  .accordion__amount {
+    font-size: 12px;
+    width: 17%;
+    padding-right: 10px;
+  }
+
+  .accordion__price {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+
+  .accordion-container {
+    padding: 16px 25px;
+    margin-bottom: 26px;
+  }
+
+  .accordion__year {
+    font-size: 14px;
+  }
+
+  .accordion__image {
+    margin-right: 16px;
+  }
+
+  .accordion__text_title {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .accordion__date {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+
+  .accordion__order {
+    font-size: 10px;
+  }
+
+  .accordion__order span:last-child {
+    font-size: 12px;
+  }
+
+  .accordion__total_title span {
+    font-size: 12px;
+  }
+
+  .accordion__payment {
+    font-size: 8px;
+  }
+
+  .accordion__content {
+    padding: 0 13px 20px 13px;
+  }
+
+  .accordion__button {
+    padding: 12px;
   }
 
   .btn-green {
@@ -6493,6 +6778,15 @@ a.ui-button:active,
     width: 300px;
     height: 210px;
     bottom: 25%;
+  }
+
+  .form-group label {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .form-control {
+    height: 40px;
   }
 
   .product-item__image {
@@ -6697,6 +6991,14 @@ a.ui-button:active,
 
   .newsletter-title span {
     text-align: center;
+  }
+
+  .newsletter button {
+    height: 40px;
+  }
+
+  .newsletter button i {
+    font-size: 22px;
   }
 
   .copyright-row {
@@ -7213,23 +7515,36 @@ a.ui-button:active,
     height: 10px;
   }
 
-  .account-menu {
-    justify-content: space-between;
+  .account-menu li {
+    margin: 0 3px;
   }
 
   .account-menu li a {
-    padding: 7px 10px;
+    padding: 7px 9px;
     font-size: 14px;
+  }
+
+  .personal-data .col-md-6:nth-child(1),
+  .reset-password .col-md-6:nth-child(1) {
+    padding: 0;
+  }
+
+  .personal-data .col-md-6:nth-child(2),
+  .reset-password .col-md-6:nth-child(2) {
+    padding: 0;
+  }
+
+  .personal-data,
+  .reset-password {
+    padding: 30px 40px;
+  }
+
+  .form-submit {
+    margin-top: 0;
   }
 }
 
 @media (max-width: 575px) {
-  .btn-gradient {
-    font-size: 8px;
-    padding: 0 8px;
-    line-height: 27px;
-  }
-
   .product-item__order {
     padding: 0 15px 15px 15px;
   }

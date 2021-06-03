@@ -2,27 +2,29 @@
 @import "../abstracts/variables";
 
 .account {
-  min-height: 100vh;
+  min-height: 80vh;
+  @media (max-width: $breakpoint-lg) {
+    min-height: unset;
+  }
   &-menu {
     display: flex;
     justify-content: center;
     border-bottom: 2px solid #f2f2f2;
     margin-bottom: 34px;
-    @media (max-width: $breakpoint-md) {
-      justify-content: space-between;
-    }
     & li {
       margin: 0 15px;
+      @media (max-width: $breakpoint-md) {
+        margin: 0 3px;
+      }
       & a {
         display: block;
-        font-weight: 600;
         padding: 28px 30px;
         text-decoration: none;
         position: relative;
         font-size: 20px;
         @include transition(.3);
         @media (max-width: $breakpoint-md) {
-          padding: 7px 10px;
+          padding: 7px 9px;
           font-size: 14px;
         }
         &:after {
@@ -53,10 +55,57 @@
 .personal-data, .reset-password {
   background: #F7F7F7;
   border-radius: 27px;
-  padding: 24px 66px;
+  padding: 24px 70px;
   margin: 0;
+  & .col-xs-12 {
+    padding: 0;
+  }
+  & .col-md-6:nth-child(1) {
+    padding-right: 20px;
+    @media (max-width: $breakpoint-md) {
+      padding: 0;
+    }
+  }
+  & .col-md-6:nth-child(2) {
+    padding-left: 20px;
+    @media (max-width: $breakpoint-md) {
+      padding: 0;
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    margin-bottom: 35px;
+  }
+  @media (max-width: $breakpoint-md) {
+    padding: 30px 40px;
+  }
+}
+
+.account-profile {
+  margin-bottom: 90px;
+  @media (max-width: $breakpoint-lg) {
+    margin: 20px 0 0 0;
+  }
 }
 
 .form-submit {
   margin-top: 20px;
+  @media (max-width: $breakpoint-md) {
+    margin-top: 0;
+  }
+}
+.form-datepicker input {
+  background-image: url('../img/icons/icon-calendar.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 95%;
+}
+
+.account-history {
+  &__heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
 }

@@ -125,6 +125,12 @@
     border: none;
     outline: none;
     cursor: pointer;
+    @media (max-width: $breakpoint-md) {
+      height: 40px;
+      & i {
+        font-size: 22px;
+      }
+    }
     & i {
       font-size: 25px;
       &:before {

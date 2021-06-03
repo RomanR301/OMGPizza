@@ -1,66 +1,221 @@
 .accordion {
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    width: 46%;
+    @media (max-width: $breakpoint-md) {
+      font-size: 12px; 
+      width: 60%;
+      padding-right: 10px;
+    }
+    & span {
+      font-weight: 700;
+    }
+  }
+  &__amount {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    width: 36%;
+    font-weight: 700;
+    @media (max-width: $breakpoint-md) {
+      font-size: 12px; 
+      width: 17%;
+      padding-right: 10px;
+    }
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.015em;
+    @media (max-width: $breakpoint-md) {
+      font-size: 12px; 
+      padding-right: 10px;
+    }
+  }
   &-container {
-
+    padding: 30px 70px;
+    margin-bottom: 30px;
+    background: #F7F7F7;
+    border-radius: 27px;
+    @media (max-width: $breakpoint-md) {
+      padding: 16px 25px;
+      margin-bottom: 26px;
+    }
+  }
+  &__year {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    @media (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+  } 
+  &__image {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    margin-right: 24px;
+    display: flex;
+    background-image: url('../img/product-item-background.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media (max-width: $breakpoint-md) {
+      margin-right: 16px;
+    }
+    & img {
+      width: 39px;
+      height: 39px;
+      object-fit: contain;
+      margin: auto;
+    }
+  }
+  &__text {
+    width: 100%;
+    &_title {
+      border-bottom: 1px solid #E7E7E7;   
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    &_total {
+      &_title {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  &__date {
+    font-size: 12px;
+    line-height: 16px;
+    color: #7C7C7C;
+    margin-bottom: 7px;
+    @media (max-width: $breakpoint-md) {
+      font-size: 8px; 
+      margin-bottom: 2px;
+    }
+  }
+  &__order {
+    font-size: 12px;
+    line-height: 16px;
+    @media (max-width: $breakpoint-md) {
+      font-size: 10px; 
+    }
+    & span {
+      font-weight: 600;
+    }
+    & span:last-child {
+      font-size: 16px;
+      @media (max-width: $breakpoint-md) {
+        font-size: 12px;
+      }
+    }
+  }
+  &__total {
+    &_title {
+      display: flex;
+      justify-content: space-between;
+      & span {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 4px;
+        @media (max-width: $breakpoint-md) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  &__order {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__payment {
+    font-size: 12px;
+    color: #7C7C7C;
+    @media (max-width: $breakpoint-md) {
+      font-size: 8px; 
+    }
   }
   &__item {
     position: relative;
     width: 100%;
     height: auto;
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    overflow: hidden;
     &.active {
-      & i:before {
-        transform: rotate(135deg);
-      }
-      & i:after {
-        transform: rotate(225deg);
+      & i {
+        transform: rotate(-90deg);
       }
     }
   }
   &__content {
     display:none;
-    padding: 0 40px 30px 0;
+    padding: 0 150px 30px 40px;
+    background: $whiteColor;
+    @media (max-width: $breakpoint-md) {
+      padding: 0 13px 20px 13px; 
+    }
     & p {
       margin: 0;
       color: $defaultText;
     }
+    &_inner {
+      display: flex;
+    }
   }
   &__button {
-    display: block;
-    padding: 30px 0 30px 0;
+    padding: 17px 30px;
     text-decoration: none;
     color: $defaultText;
     font-weight: 500;
-    @include fontSize(18, 30);
     @include transition(.3);
     line-height: 22px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #303030;
-    margin: -3px;
+    margin: 0;
+    @media (max-width: $breakpoint-md) {
+      padding: 12px; 
+    }
     & i {
-      min-width: 30px;
-      min-height: 30px;
-      max-width: 30px;
-      max-height: 30px;
-      background: $whiteColor;
-      border-radius: 100px;
-      position: relative;
-      display: block;
-      margin-left: 10px;
-      &:before, &:after {
-        content: '';
-        width: 18px;
-        height: 2px;
-        position: absolute;
-        left: calc(50% - 9px);
-        top: calc(50% - 1px);
-        background: $blueColor;
-        transform: rotate(90deg);
-        @include transition(.3);
-      }
-      &:after {
-        transform: rotate(180deg);
+      margin-left: auto;
+      font-size: 10px;
+      font-weight: 700;
+      transform: rotate(90deg);
+      @include transition(.3);
+      &:before {
+        color: $defaultText;
       }
     }
+    // & i {
+    //   min-width: 30px;
+    //   min-height: 30px;
+    //   max-width: 30px;
+    //   max-height: 30px;
+    //   background: $whiteColor;
+    //   border-radius: 100px;
+    //   position: relative;
+    //   display: block;
+    //   margin-left: 10px;
+    //   &:before, &:after {
+    //     content: '';
+    //     width: 18px;
+    //     height: 2px;
+    //     position: absolute;
+    //     left: calc(50% - 9px);
+    //     top: calc(50% - 1px);
+    //     // background: $blueColor;
+    //     transform: rotate(90deg);
+    //     @include transition(.3);
+    //   }
+    //   &:after {
+    //     transform: rotate(180deg);
+    //   }
+    // }
   }
 }

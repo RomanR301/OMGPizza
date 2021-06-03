@@ -140,6 +140,14 @@ let front = {
       $(document).on('click', '.hamburger', function () {
           self.toggleNav();
       });
+      $(document).ready(function() {
+        $(".accordion__item .accordion__button").on("click", function(e) {
+        e.preventDefault();
+          $(this).parent().toggleClass("active");
+          $(this).parent().find(".accordion__content").slideToggle(200);
+
+        });
+      });
   }
 };
 

@@ -1,0 +1,38 @@
+@@include('_header.html')
+<main class="account">
+  <section class="account-profile">
+    <div class="container">
+      <ul class="account-menu">
+        <li>
+          <a href="account-profile.html">Профіль</a>
+        </li>
+        <li>
+          <a href="account-history.html" class="active">Історія замовлень</a>
+        </li>
+        <li>
+          <a href="account-delivery.html">Адреси доставки</a>
+        </li>
+      </ul>
+      <div class="account-history__heading">ваші Замовлення</div>
+      <div class="accordion-row">
+        <div class="accordion-container">
+          <div class="accordion__year">Липень 2021</div>
+          @@include('_accordion-item.html')
+          @@include('_accordion-item.html')
+          @@include('_accordion-item.html')
+        </div>
+        <div class="accordion-container">
+          <div class="accordion__year">Червень 2021</div>
+          @@include('_accordion-item.html')
+          @@include('_accordion-item.html')
+        </div>
+        <div class="accordion-container">
+          <div class="accordion__year">Травень 2020</div>
+          @@include('_accordion-item.html')
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_footer.html')

@@ -129,6 +129,9 @@
   display: flex;
   align-items: center;
   margin-bottom: 38px;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 27px;
+  }
   & span {
     background: linear-gradient(180deg, #F29870 0%, #F8C53E 100%);
     display: block;
