@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>OMG Sushi&Pizza</title>
+</head>
+
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="header-logo">
+        <img src="./img/main-logo.svg" alt="OMG Sushi and Pizza логотип">
+      </a>
+      <div class="categories-menu">
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-pizza.svg" alt="Піца">
+            <span>Піца</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-kimbap.svg" alt="Суші">
+            <span>Суші</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-soup.svg" alt="Супи">
+            <span>Супи</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-drink.svg" alt="Напої">
+            <span>Напої</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-salad.svg" alt="Салати">
+            <span>Салати</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-icecream.svg" alt="Десерти">
+            <span>Десерти</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-tabasko.svg" alt="Соуси">
+            <span>Соуси</span>
+          </p>
+        </a>
+      </div>
+      <a class="login" href="#">
+        <i class="icon-icon-user"></i>
+      </a>
+    </div>
+    <div class="header-top home-page-header">
+      <a href="index.html" class="header-logo">
+        <img src="./img/main-logo.svg" alt="OMG Sushi and Pizza логотип">
+      </a>
+      <div class="header-schedule">
+        Працюємо
+        <p>з <span>10:00</span> до <span>00:00</span></p>
+      </div>
+      <div class="navbar">
+        <ul class="menu">
+          <li class="menu-item"><a class="menu__link" href="catalogue.html">Меню</a></li>
+          <li class="menu-item"><a class="menu__link" href="discounts.html">Акції</a></li>
+          <li class="menu-item"><a class="menu__link" href="news.html">Новини</a></li>
+          <li class="menu-item"><a class="menu__link" href="about.html">Про нас</a></li>
+          <li class="menu-item"><a class="menu__link" href="delivery.html">Доставка та оплата</a></li>
+          <li class="menu-item"><a class="menu__link" href="contacts.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="header-phone">
+        <i class="icon-icon-phone circle-icon"></i>
+        <a class="header-phone__link --bold" href="tel:+375293210000">+375 (29) 321 00 00</a>
+        <a class="header-phone__link" href="tel:+375333210000">+375 (33) 321 00 00</a>
+      </div>
+      <div class="header-cart">
+        <i class="icon-icon-cart circle-icon"></i>
+        <span class="cart-counter">1</span>
+      </div>
+      <div class="header-login">
+        <a class="login" href="#">
+          <i class="icon-icon-user"></i>
+        </a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-mobile">
+      <div class="categories-menu">
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-pizza.svg" alt="Піца">
+            <span>Піца</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-kimbap.svg" alt="Суші">
+            <span>Суші</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-soup.svg" alt="Супи">
+            <span>Супи</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-drink.svg" alt="Напої">
+            <span>Напої</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-salad.svg" alt="Салати">
+            <span>Салати</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-icecream.svg" alt="Десерти">
+            <span>Десерти</span>
+          </p>
+        </a>
+        <a class="categories-menu__link" href="#">
+          <p class="categories-menu__inner">
+            <img src="./img/menu-tabasko.svg" alt="Соуси">
+            <span>Соуси</span>
+          </p>
+        </a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item"><a class="menu__link" href="catalogue.html">Меню</a></li>
+        <li class="menu-item"><a class="menu__link" href="discounts.html">Акції</a></li>
+        <li class="menu-item"><a class="menu__link" href="news.html">Новини</a></li>
+        <li class="menu-item"><a class="menu__link" href="about.html">Про нас</a></li>
+        <li class="menu-item"><a class="menu__link" href="delivery.html">Доставка та оплата</a></li>
+        <li class="menu-item"><a class="menu__link" href="contacts.html">Контакти</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="body-padding"></div>
+<main class="ordering">
+  <div class="breadcrumbs-container container">
+    <ul class="breadcrumbs">
+      <li>
+        <a href="index.html">Головна</a>
+      </li>
+      <li>
+        <a href="catalogue.html">Суші</a>
+      </li>
+      <li>
+        <a href="product-detailed.html">Каліфорнія з креветкою</a>
+      </li>
+      <li>Кошик</li>
+    </ul>
+  </div>
+  <section class="checkout">
+    <div class="checkout-header">
+      <div class="container">
+        <div class="page-title-container">
+          <h1 class="page-title">Кошик</h1>
+        </div>
+
+        <!-- CHECKOUT HERE -->
+
+      </div>
+    </div>
+  </section>
+  <section class="product-carousel">
+    <div class="container">
+      <div class="product-carousel__header">
+        <div class="products-carousel__text">
+          <div class="btn btn-green mb-18">Напої</div>
+          <h2 class="app__title">Рекомендуємо замовити..</h2>
+          <p class="app__description">Morbi sed accumsan massa, sed aliquet erat. Integer consequat, mauris quis
+            iaculis
+            sodales.</p>
+        </div>
+      </div>
+      <div class="swiper-container product-detailed__recommendations_carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item">
+  <a href="product-detailed.html" class="product-item__main">
+    <div class="product-item__image">
+      <img src="./img/coca-cola.png" alt="Кока кола">
+    </div>
+    <!-- <div class="product-item__badge">Новинка</div> -->
+    <div class="product-item__title">
+      Coca Cola
+    </div>
+    <div class="product-item__price">
+      <div class="product-item__amount">
+        <span>135</span>
+      </div>
+      <div class="product-item__weight">
+        1 л
+      </div>
+    </div>
+  </a>
+  <div class="product-item__order">
+    <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-quantity="1">Замовити</a>
+    <div class="quantity_custom">
+      <button class="product-item-spinner__btn --minus js-product-minus-shop">-</button>
+      <div class="quantity">
+        <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="К-ть" size="4" placeholder="" inputmode="numeric">
+      </div>
+      <button class="product-item-spinner__btn --plus js-product-plus-shop">+</button>
+    </div>
+  </div>
+  <!-- <div class="product-item__description">
+    Тунець копчений, стружка тунця, майонез, соус тайський солодкий чилі, васабі 0,5 г
+  </div> -->
+</div>
+          </div>
+        </div>
+        <div class="swiper-pagination product-detailed__recommendations_carousel_pagination"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <a class="footer-logo" href="#">
+          <img src="./img/main-logo-white.svg" alt="OMG Sushi and Pizza логотип">
+        </a>
+        <p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed accumsan massa, sed aliquet erat.</p>
+        <div class="socials-list">
+          <a class="circle-icon" href="#">
+            <i class="icon-icon-facebook"></i>
+          </a>
+          <a class="circle-icon" href="#">
+            <i class="icon icon-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <ul class="footer-menu">
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Меню</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Про нас</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Акції</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Доставка та оплата</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu__link">Новини</a>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter-column">
+        <div class="newsletter">
+          <div class="newsletter-title">
+            <p>Підпишіться на розсилку</p>
+            <span>ТА ОТРИМУЙТЕ НОВИНИ ПРО ЗНИЖКИ ТА AКЦІЇ!</span>
+            <form action="">
+              <div class="form-group">
+                <input type="email" class="form-control" name="newsletter" required placeholder="Ваша ел.скринька">
+                <button type="submit">
+                  <i class="icon-icon-telegram"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-row">
+      <div class="footer-payment">
+        <img src="./img/visa.svg" alt="Visa логотип">
+        <img src="./img/mastercard.svg" alt="MasterCard логотип">
+        <img src="./img/apple-pay.svg" alt="ApplePay логотип">
+      </div>
+      <a href="#" class="privacy">Договір публічної оферти</a>
+      <p class="copyright-text">© 2021 OMG. Pizza&Sushi</p>
+      <a class="mady-by" href="#">Дизайн та розробка — <span>WebTune</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/libs.min.js"></script>
+<script src="js/script.min.js"></script>
+
+</body>
+
+</html>

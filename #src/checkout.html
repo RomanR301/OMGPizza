@@ -1,0 +1,79 @@
+@@include('_header.html')
+<main class="ordering">
+  <div class="breadcrumbs-container container">
+    <ul class="breadcrumbs">
+      <li>
+        <a href="index.html">Головна</a>
+      </li>
+      <li>
+        <a href="catalogue.html">Суші</a>
+      </li>
+      <li>
+        <a href="product-detailed.html">Каліфорнія з креветкою</a>
+      </li>
+      <li>Кошик</li>
+    </ul>
+  </div>
+  <section class="checkout">
+    <div class="checkout-header">
+      <div class="container">
+        <div class="page-title-container">
+          <h1 class="page-title">Кошик</h1>
+        </div>
+
+        <!-- CHECKOUT HERE -->
+
+      </div>
+    </div>
+  </section>
+  <section class="product-carousel">
+    <div class="container">
+      <div class="product-carousel__header">
+        <div class="products-carousel__text">
+          <div class="btn btn-green mb-18">Напої</div>
+          <h2 class="app__title">Рекомендуємо замовити..</h2>
+          <p class="app__description">Morbi sed accumsan massa, sed aliquet erat. Integer consequat, mauris quis
+            iaculis
+            sodales.</p>
+        </div>
+      </div>
+      <div class="swiper-container product-detailed__recommendations_carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('_product-item-drinks.html')
+          </div>
+        </div>
+        <div class="swiper-pagination product-detailed__recommendations_carousel_pagination"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_footer.html')

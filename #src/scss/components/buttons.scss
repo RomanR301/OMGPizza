@@ -80,3 +80,29 @@
     }
   }
 }
+
+.btn-gradient {
+  background: linear-gradient(180deg, #F29870 0%, #F8C53E 100%);
+  border-radius: 27px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 10px 28px;
+  display: block;
+  box-shadow: 1px 1px 10px rgba(255,255,255, .9);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  @include transition(.3);
+  @media (max-width: $breakpoint-sm) {
+    font-size: 8px;
+    padding: 0 8px;
+    line-height: 27px;
+  }
+  &:hover {
+    box-shadow: 1px 1px 10px #FDAB5C;
+  }
+}

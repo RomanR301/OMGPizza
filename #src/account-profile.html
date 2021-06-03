@@ -1,0 +1,80 @@
+@@include('_header.html')
+<main class="account">
+  <section class="account-profile">
+    <div class="container">
+      <ul class="account-menu">
+        <li>
+          <a href="#" class="active">Профіль</a>
+        </li>
+        <li>
+          <a href="#">Історія замовлень</a>
+        </li>
+        <li>
+          <a href="#">Адреси доставки</a>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="section__title">
+            <span>1</span>ОСОБИСТІ ДАНІ
+          </div>
+          <form action="">
+            <div class="row personal-data">
+              <div class="col-md-6 col-xs-12 form-group">
+                <label for="personal-data-name">Ваше ім’я</label>
+                <input type="text" class="form-control"  name="personal-data-name" id="personal-data-name" placeholder="Володимир">
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label for="personal-data-last-name">Ваше прізвище</label>
+                <input type="text" class="form-control" name="personal-data-last-name" id="personal-data-last-name"
+                  placeholder="Ваше прізвище">
+              </div>
+              <div class="col-xs-12 form-group">
+                <label for="personal-data-name">Номер телефону</label>
+                <input type="text" class="form-control" name="personal-data-name" id="personal-data-name" placeholder="+380 11 11 11 111">
+              </div>
+              <div class="col-xs-12 form-group">
+                <label for="personal-data-name">Дата народження</label>
+                <input type="text" class="form-control" name="personal-data-name" id="personal-data-name" placeholder="Володимир ">
+              </div>
+              <div class="col-xs-12 form-group">
+                <label for="personal-data-email">E-mail</label>
+                <input type="email" class="form-control" name="personal-data-email" id="personal-data-email"
+                  placeholder="volodymyr@gmail.com ">
+              </div>
+              <div class="col-xs-12 form-submit">
+                <button class="btn-gradient" type="submit">Зберегти зміни</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5">
+          <div class="section__title">
+            <span>2</span>Зміна паролю
+          </div>
+          <form action="">
+            <div class="row reset-password">
+              <div class="col-xs-12 form-group">
+                <label for="reset-password-current">Ваш поточний паролю</label>
+                <input type="password" class="form-control" name="reset-password-current" id="reset-password-current" required >
+              </div>
+              <div class="col-xs-12 form-group">
+                <label for="reset-password-new">Новий пароль</label>
+                <input type="password" class="form-control" name="reset-password-new" id="reset-password-new" required >
+              </div>
+              <div class="col-xs-12 form-group">
+                <label for="reset-password-new-2">Повторіть новий пароль</label>
+                <input type="password" class="form-control" name="reset-password-new-2" id="reset-password-new-2" required >
+              </div>
+              <div class="col-xs-12 form-submit">
+                <button class="btn-gradient" type="submit">Зберегти зміни</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_footer.html')

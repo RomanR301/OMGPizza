@@ -118,8 +118,30 @@
       margin: 15px 0;
       padding-bottom: 15px;
     }
+  } 
+}
+
+.section__title {   
+  color: $defaultText; 
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+  & span {
+    background: linear-gradient(180deg, #F29870 0%, #F8C53E 100%);
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    color: $whiteColor;
+    font-size: 20px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
 }
 
 .icon-icon-facebook:before {
