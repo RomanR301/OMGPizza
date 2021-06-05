@@ -164,82 +164,125 @@
   <section class="other-page">
     <img class="other-page-bg" src="./img/error-page-bg.jpg" alt="background-image">
     <div class="container">
-      <h1 class="hero-screen-title" data-title="404">404</h1>
-      <p>Вибачте, такої сторінки не існує.
-        Поверніться на головну та повторіть вашу спробу ще раз</p>
-        <a class="btn btn-shadow" href="#">Кнопка</a>
+      <div class="modal-showcases">
+        <button class="modalTrigger btn btn-shadow" data-modal="#login">Login</button>
+        <button class="modalTrigger btn btn-shadow" data-modal="#login">Register</button>
+        <button class="modalTrigger btn btn-shadow" data-modal="#reset-password">Reset password</button>
+      </div>
     </div>
   </section>
 </main>
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-xs-12">
-        <a class="footer-logo" href="#">
-          <img src="./img/main-logo-white.svg" alt="OMG Sushi and Pizza логотип">
+<!-- LOGIN FORM -->
+<div class="modal modal-login" id="login">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__close modal__close--cross">
+        <img src="./img/icons/icon-close.svg" alt="close modal">
+      </div>
+      <div class="modal__heading --semibold">Вхід у кабінет</div>
+      <div class="modal__socials">
+        <a href="#" class="socials__item google-icon">
+          Увійти з допомогою Google <img src="./img/icons/icon-google.svg" alt="google logo">
         </a>
-        <p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed accumsan massa, sed aliquet erat.</p>
-        <div class="socials-list">
-          <a class="circle-icon" href="#">
-            <i class="icon-icon-facebook"></i>
-          </a>
-          <a class="circle-icon" href="#">
-            <i class="icon icon-instagram"></i>
-          </a>
-        </div>
+        <a href="#" class="socials__item facebook-icon">
+          Увійти з допомогою Facebook <img src="./img/icons/icon-facebook2.svg" alt="facebook logo">
+        </a>
       </div>
-      <div class="col-md-4 col-xs-12">
-        <ul class="footer-menu">
-          <li class="footer-menu-item">
-            <a href="#" class="footer-menu__link">Меню</a>
-          </li>
-          <li class="footer-menu-item">
-            <a href="#" class="footer-menu__link">Про нас</a>
-          </li>
-          <li class="footer-menu-item">
-            <a href="#" class="footer-menu__link">Акції</a>
-          </li>
-          <li class="footer-menu-item">
-            <a href="#" class="footer-menu__link">Доставка та оплата</a>
-          </li>
-          <li class="footer-menu-item">
-            <a href="#" class="footer-menu__link">Новини</a>
-          </li>
-        </ul>
-      </div>
-      <div class="newsletter-column">
-        <div class="newsletter">
-          <div class="newsletter-title">
-            <p>Підпишіться на розсилку</p>
-            <span>ТА ОТРИМУЙТЕ НОВИНИ ПРО ЗНИЖКИ ТА AКЦІЇ!</span>
-            <form action="">
-              <div class="form-group">
-                <input type="email" class="form-control" name="newsletter" required placeholder="Ваша ел.скринька">
-                <button type="submit">
-                  <i class="icon-icon-telegram"></i>
-                </button>
-              </div>
-            </form>
+      <div class="modal__form">
+        <form action="">
+          <div class="form-group">
+            <input type="email" class="form-control" name="login-email" placeholder="Ваш E-mail*" required>
           </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="login-password" placeholder="Ваш пароль*" required>
+          </div>
+          <div class="form-group reset-password-container">
+            <button class="btn modal__close modal-btn-link modalTrigger" data-modal="#reset-password">Забули пароль?</button>
+          </div>
+          <div class="form-group form-submit">
+            <button class="btn btn-gradient">Увійти</button>
+          </div>
+        </form>
+        <div class="login-helper">
+          Немаєш аккаунту? <button class="modal__close modal-btn-link modalTrigger" data-modal="#register"> Зареєструватись</button>
         </div>
       </div>
-    </div>
-    <div class="copyright-row">
-      <div class="footer-payment">
-        <img src="./img/visa.svg" alt="Visa логотип">
-        <img src="./img/mastercard.svg" alt="MasterCard логотип">
-        <img src="./img/apple-pay.svg" alt="ApplePay логотип">
-      </div>
-      <a href="#" class="privacy">Договір публічної оферти</a>
-      <p class="copyright-text">© 2021 OMG. Pizza&Sushi</p>
-      <a class="mady-by" href="#">Дизайн та розробка — <span>WebTune</span></a>
     </div>
   </div>
-</footer>
+</div>
 
-<script src="js/libs.min.js"></script>
-<script src="js/script.min.js"></script>
+<!-- REGISTER FORM -->
+<div class="modal modal-register" id="register">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__close modal__close--cross">
+        <img src="./img/icons/icon-close.svg" alt="close modal">
+      </div>
+      <div class="modal__heading --semibold">Реєстрація</div>
+      <div class="modal__form">
+        <form action="">
+          <div class="form-group">
+            <input type="text" class="form-control" name="register-name" placeholder="Ваше повне ім’я*" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" name="register-phone" placeholder="Ваш номер телефону*" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="register-email*" placeholder="Ваш E-mail*" required>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="register-password" placeholder="Ваш пароль*" required>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="register-password2" placeholder="Повторіть пароль*" required>
+          </div>
+          <div class="modal__socials">
+            <a href="#" class="socials__item google-icon">
+              Увійти з допомогою Google <img src="./img/icons/icon-google.svg" alt="google logo">
+            </a>
+            <a href="#" class="socials__item facebook-icon">
+              Увійти з допомогою Facebook <img src="./img/icons/icon-facebook2.svg" alt="facebook logo">
+            </a>
+          </div>
+          <div class="form-group form-submit">
+            <button class="btn btn-gradient">Зареєструватись</button>
+          </div>
+        </form>
+        <div class="login-helper">
+          Вже є аккаунт? <button class="modal__close modal-btn-link modalTrigger" data-modal="#login"> Увійти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-</body>
 
-</html>
+<!-- RESET PASSWORD FORM -->
+<div class="modal modal-reset-password" id="reset-password">
+  <div class="modal__body">
+    <div class="modal__content">
+      <div class="modal__close modal__close--cross">
+        <img src="./img/icons/icon-close.svg" alt="close modal">
+      </div>
+      <div class="modal__heading --semibold">Відновити пароль?</div>
+      <div class="modal__subheading">
+        Після заповнення форми, ми надішлемо вам детальну інструкцію по відновленню паролю
+      </div>
+      <div class="modal__form">
+        <form action="">
+          <div class="form-group">
+            <input type="email" class="form-control" name="register-email*" placeholder="Ваш E-mail*" required>
+          </div>
+         
+          <div class="form-group form-submit">
+            <button class="btn btn-gradient">Відновити пароль</button>
+          </div>
+        </form>
+        <div class="login-helper">
+          Повернутись до <button class="modal__close modal-btn-link modalTrigger" data-modal="#login">Входу</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('_footer.html')

@@ -1,0 +1,77 @@
+@@include('_header.html')
+<main class="account">
+  <section class="account-delivery">
+    <div class="container">
+      <ul class="account-menu">
+        <li>
+          <a href="account-profile.html">Профіль</a>
+        </li>
+        <li>
+          <a href="account-history.html">Історія замовлень</a>
+        </li>
+        <li>
+          <a href="account-delivery.html" class="active">Адреси доставки</a>
+        </li>
+      </ul>
+      <div class="account-history__heading">Адреси доставки</div>
+      <div class="account-delivery-list">
+        <div class="account-address-item">
+          <div class="account-address">
+            <div class="account-address__header">
+              <div class="account-address__name">Назва адресу</div>
+              <div class="account-address__edit">
+                <img src="./img/icons/icon-pencil.svg" alt="edit">
+              </div>
+            </div>
+            <div class="account-address__street">
+              м.Львів, вул. Наукова, буд. 26, кв. 2
+            </div>
+            <div class="account-address__button">
+              <input type="radio" name="account-address" id="account-address-1">
+              <label for="account-address-1">Зробити адресу основною</label>
+            </div>
+          </div>
+        </div>
+        <div class="account-address-item">
+          <div class="account-address">
+            <div class="account-address__header">
+              <div class="account-address__name">Назва адресу</div>
+              <div class="account-address__edit">
+                <img src="./img/icons/icon-pencil.svg" alt="edit">
+              </div>
+            </div>
+            <div class="account-address__street">
+              м.Львів, вул. Наукова, буд. 26, кв. 2
+            </div>
+            <div class="account-address__button">
+              <input type="radio" name="account-address" id="account-address-2">
+              <label for="account-address-2">Зробити адресу основною</label>
+            </div>
+          </div>
+        </div>
+        <div class="account-address-item">  
+          <div class="account-address">
+            <div class="account-address__header">
+              <div class="account-address__name">Назва адресу</div>
+              <div class="account-address__edit">
+                <img src="./img/icons/icon-pencil.svg" alt="edit">
+              </div>
+            </div>
+            <div class="account-address__street">
+              м.Львів, вул. Наукова, буд. 26, кв. 2
+            </div>
+            <div class="account-address__button">
+              <input type="radio" name="account-address" id="account-address-3">
+              <label for="account-address-3">Зробити адресу основною</label>
+            </div>
+          </div>
+        </div>
+        <div class="account-address-add">
+          <span>+</span>Додати адресу
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('_footer.html')
