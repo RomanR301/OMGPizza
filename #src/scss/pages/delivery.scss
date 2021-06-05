@@ -1,0 +1,125 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.delivery {
+  margin-bottom: 50px;
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    @media (max-width: $breakpoint-md) {
+      font-size: 12px;
+    }
+    & img {
+      margin-right: 20px;
+      width: 50px;
+      height: 50px;
+      min-width: 50px;
+      object-fit: contain;
+      @media (max-width: $breakpoint-md) {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        margin-right: 12px;
+      }
+    }
+  }
+  &__list {
+    padding-left: 70px;
+    margin-bottom: 30px;
+    @media (max-width: $breakpoint-md) {
+      padding-left: 50px;
+    }
+    & li {
+      font-weight: 600;
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+      }
+    }
+  }
+  &-zone {
+    margin-top: 20px;
+    padding-left: 70px;
+    @media (max-width: $breakpoint-md) {
+      padding-left: 50px;
+    }
+    & .zone-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      font-weight: 600;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 12px;
+      }
+      & div {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+        @media (max-width: $breakpoint-md) {
+          font-size: 10px;
+        }
+      }
+      & span {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 5px;
+        @media (max-width: $breakpoint-md) {
+          font-size: 10px;
+        }
+      }
+      & div:before {
+        content: '';
+        width: 23px;
+        height: 23px;
+        border-radius: 5px;
+        display: block;
+        margin-right: 12px;
+        @media (max-width: $breakpoint-md) {
+          width: 12px;
+          height: 12px;
+          border-radius: 3px;
+        }
+      }
+    }
+    & .green__zone {
+      & div {
+        color: #5EAE53;
+        &:before {
+          background: #5EAE53;
+        }
+      }
+    }
+    & .orange__zone {
+      & div {
+        color: #F59828;
+        &:before {
+          background:#F59828;
+        }
+      }
+    }
+  }
+  &__map {
+    padding-left: 70px;
+    height: 380px;
+    @media (max-width: $breakpoint-lg) {
+      height: 255px;
+      padding-left: 0;
+      margin: 6px 0 16px 0;
+    }
+    & img {
+      @include defaultIcon(cover);
+    }
+  }
+  &__helper {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    @media (max-width: $breakpoint-md) {
+      font-size: 10px;
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+}

@@ -6246,6 +6246,102 @@ a.ui-button:active,
   display: inline-block;
 }
 
+.delivery {
+  margin-bottom: 50px;
+}
+
+.delivery__title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.delivery__title img {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  object-fit: contain;
+}
+
+.delivery__list {
+  padding-left: 70px;
+  margin-bottom: 30px;
+}
+
+.delivery__list li {
+  font-weight: 600;
+}
+
+.delivery-zone {
+  margin-top: 20px;
+  padding-left: 70px;
+}
+
+.delivery-zone .zone-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.delivery-zone .zone-item div {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.delivery-zone .zone-item span {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 5px;
+}
+
+.delivery-zone .zone-item div:before {
+  content: '';
+  width: 23px;
+  height: 23px;
+  border-radius: 5px;
+  display: block;
+  margin-right: 12px;
+}
+
+.delivery-zone .green__zone div {
+  color: #5EAE53;
+}
+
+.delivery-zone .green__zone div:before {
+  background: #5EAE53;
+}
+
+.delivery-zone .orange__zone div {
+  color: #F59828;
+}
+
+.delivery-zone .orange__zone div:before {
+  background: #F59828;
+}
+
+.delivery__map {
+  padding-left: 70px;
+  height: 380px;
+}
+
+.delivery__map img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery__helper {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 @media (min-width: 576px) {
   .col-sm-1 {
     -webkit-box-flex: 0;
@@ -7189,6 +7285,12 @@ a.ui-button:active,
   .other-page {
     height: auto;
     padding: 200px 0;
+  }
+
+  .delivery__map {
+    height: 255px;
+    padding-left: 0;
+    margin: 6px 0 16px 0;
   }
 }
 
@@ -8246,6 +8348,53 @@ a.ui-button:active,
 
   .other-page .container p {
     font-size: 12px;
+  }
+
+  .delivery__title {
+    font-size: 12px;
+  }
+
+  .delivery__title img {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    margin-right: 12px;
+  }
+
+  .delivery__list {
+    padding-left: 50px;
+  }
+
+  .delivery__list li {
+    font-size: 10px;
+  }
+
+  .delivery-zone {
+    padding-left: 50px;
+  }
+
+  .delivery-zone .zone-item {
+    margin-bottom: 12px;
+  }
+
+  .delivery-zone .zone-item div {
+    font-size: 10px;
+  }
+
+  .delivery-zone .zone-item span {
+    font-size: 10px;
+  }
+
+  .delivery-zone .zone-item div:before {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+  }
+
+  .delivery__helper {
+    font-size: 10px;
+    margin-top: 0;
+    text-align: center;
   }
 }
 
