@@ -27,10 +27,14 @@
   &__heading {
     font-weight: 700;
     font-size: 40px;
-    line-height: 64px;
+    line-height: 1.2;
     text-align: center;
     color: #FF9E2A;
     margin-bottom: 42px;
+    @media (max-width: $breakpoint-md) {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
   }
   &__subheading {
     font-size: 20px;
@@ -43,6 +47,15 @@
       top: 38px;
       right: 38px;
       cursor: pointer;
+      @media (max-width: $breakpoint-md) {
+        top: 20px;
+        right: 20px;
+        & img {
+          width: 20px;
+          height: 20px;
+          margin: auto;
+        }
+      }
     }
   }
   &__body {
@@ -60,6 +73,7 @@
     overflow: auto;
     margin: auto;
     width: 550px;
+    max-height: 760px;
     padding: 69px 85px 50px 85px;
     overflow-y: auto;
     height: fit-content;
@@ -67,10 +81,12 @@
     border-radius: 0;
     background: #FFFFFF;
     border-radius: 10px;
-    @media (max-width: 1200px) {
-      min-height: 100%;
-      height: fit-content;
-      padding: 40px 15px;
+    @media (min-height: 1000px) {
+      max-height: unset;
+    }
+    @media (max-width: $breakpoint-md) {
+      width: calc(100% - 40px);
+      padding: 60px 40px 30px 40px;
     }
     & .form-submit {
       display: flex;
@@ -81,6 +97,11 @@
         font-weight: 700;
         font-size: 24px;
         padding: 0 54px;
+        @media (max-width: $breakpoint-md) {
+          padding: 0 20px;
+          font-size: 14px;
+          height: 40px;
+        }
       }
     }
     & .form-group {
@@ -91,6 +112,9 @@
       border-radius: 0;
       border-bottom: 2px solid #EEEEEE;
       font-size: 20px;
+      @media (max-width: $breakpoint-md) {
+        font-size: 12px;
+      }
     }
     &::-webkit-scrollbar-track, .select-items::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -123,6 +147,15 @@
       text-decoration: none;
       font-size: 20px;
       @include transition(.3);
+      @media (max-width: $breakpoint-md) {
+        font-size: 12px;
+        height: 39px;
+        & img {
+          width: 22px;
+          height: 22px;
+          object-fit: contain;
+        }
+      }
       & img {
         margin-left: 34px;
       }
@@ -146,6 +179,9 @@
   display: flex;
   justify-content: center;
   margin: 40px 0;
+  @media (max-width: $breakpoint-md) {
+    margin: 25px 0;     
+  }
 }
 .modal-btn-link {
   border: none;
@@ -156,6 +192,9 @@
   cursor: pointer;
   position: relative;
   padding: 0;
+  @media (max-width: $breakpoint-md) {
+    font-size: 12px;     
+  }
   &:before {
     content: '';
     background: #FF9E2A;
@@ -183,6 +222,12 @@
   & button, & a {
     margin-left: 8px;
   }
+  @media (max-width: $breakpoint-md) {
+    font-size: 12px;
+    & button, & a {
+      font-size: 12px;
+    }
+  }
 }
 
 .modal-showcases {
@@ -198,6 +243,9 @@
 .modal-register {
   & .modal__socials {
     margin: 40px 0 50px 0;
+    @media (max-width: $breakpoint-md) {
+      margin: 30px 0;
+    }
   }
 }
 
@@ -205,9 +253,28 @@
   .modal__heading {
     margin-bottom: 20px;
   }
+  .modal__subheading {
+    @media (max-width: $breakpoint-md) {
+      font-size: 12px;   
+      margin-bottom: 26px;
+    }
+  }
 }
 
 .modal-reset-password-popup {
+  .modal__content {
+    @media (max-width: $breakpoint-md) {
+      padding: 69px 53px 50px 53px;
+    }
+  }
+  .form-submit {
+    margin-bottom: 0;
+  }
+  .modal__subheading {
+    @media (max-width: $breakpoint-md) {
+      font-size: 12px;
+    }
+  }
   & .modal__heading {
     margin-bottom: 12px;
   }
@@ -221,6 +288,9 @@
     background-image: url('../../img/sorry-message-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: $breakpoint-md) {
+      padding: 40px; 
+    }
   }
   .modal__heading {
     font-weight: 700;
@@ -229,6 +299,9 @@
     color: $heavyPink;
     position: relative;
     margin-bottom: 5px;
+    @media (max-width: $breakpoint-md) {
+      font-size: 30px;
+    }
     &:before {
       content: attr(data-title);
       position: absolute;
@@ -246,6 +319,10 @@
     font-size: 20px;
     color: $whiteColor;
     margin-bottom: 48px;
+    @media (max-width: $breakpoint-md) {
+      font-size: 14px; 
+      margin-bottom: 22px;
+    }
   }
   .sorry__message {
     text-align: center;
@@ -256,6 +333,9 @@
     & span {
       font-size: 31px;
       color: $whiteColor;
+      @media (max-width: $breakpoint-md) {
+        font-size: 16px;
+      }
     }
     & strong {
       color: $whiteColor;

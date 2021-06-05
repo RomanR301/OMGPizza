@@ -1553,7 +1553,7 @@ input[type=number] {
 .modal__heading {
   font-weight: 700;
   font-size: 40px;
-  line-height: 64px;
+  line-height: 1.2;
   text-align: center;
   color: #FF9E2A;
   margin-bottom: 42px;
@@ -1588,6 +1588,7 @@ input[type=number] {
   overflow: auto;
   margin: auto;
   width: 550px;
+  max-height: 760px;
   padding: 69px 85px 50px 85px;
   overflow-y: auto;
   height: fit-content;
@@ -1751,6 +1752,10 @@ input[type=number] {
 
 .modal-reset-password .modal__heading {
   margin-bottom: 20px;
+}
+
+.modal-reset-password-popup .form-submit {
+  margin-bottom: 0;
 }
 
 .modal-reset-password-popup .modal__heading {
@@ -6908,12 +6913,6 @@ a.ui-button:active,
     min-width: 230px;
   }
 
-  .modal__content {
-    min-height: 100%;
-    height: fit-content;
-    padding: 40px 15px;
-  }
-
   .hero-screen {
     position: relative;
     margin-bottom: 50px;
@@ -7465,9 +7464,103 @@ a.ui-button:active,
     padding-left: 15px;
   }
 
+  .modal__heading {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .modal__close--cross {
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal__close--cross img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+
+  .modal__content {
+    width: calc(100% - 40px);
+    padding: 60px 40px 30px 40px;
+  }
+
+  .modal__content .form-submit button,
+  .modal__content .form-submit a {
+    padding: 0 20px;
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .modal__content .form-control {
+    font-size: 12px;
+  }
+
+  .modal__socials .socials__item {
+    font-size: 12px;
+    height: 39px;
+  }
+
+  .modal__socials .socials__item img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+  }
+
+  .reset-password-container {
+    margin: 25px 0;
+  }
+
+  .modal-btn-link {
+    font-size: 12px;
+  }
+
+  .login-helper {
+    font-size: 12px;
+  }
+
+  .login-helper button,
+  .login-helper a {
+    font-size: 12px;
+  }
+
+  .modal-register .modal__socials {
+    margin: 30px 0;
+  }
+
+  .modal-reset-password .modal__subheading {
+    font-size: 12px;
+    margin-bottom: 26px;
+  }
+
+  .modal-reset-password-popup .modal__content {
+    padding: 69px 53px 50px 53px;
+  }
+
+  .modal-reset-password-popup .modal__subheading {
+    font-size: 12px;
+  }
+
+  .modal-sorry-popup .modal__content {
+    padding: 40px;
+  }
+
+  .modal-sorry-popup .modal__heading {
+    font-size: 30px;
+  }
+
   .modal-sorry-popup .modal__heading:before {
     top: -1px;
     left: -1px;
+  }
+
+  .modal-sorry-popup .modal__subheading {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .modal-sorry-popup .sorry__message span {
+    font-size: 16px;
   }
 
   .body-padding {
@@ -8312,5 +8405,11 @@ a.ui-button:active,
     flex: 0 0 100.0%;
     max-width: 100.0%;
     padding: 0 20px;
+  }
+}
+
+@media (min-height: 1000px) {
+  .modal__content {
+    max-height: unset;
   }
 }
